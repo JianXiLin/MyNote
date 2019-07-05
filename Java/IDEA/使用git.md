@@ -3,7 +3,7 @@
 2、添加github仓库、账号密码  
 ![add github user](https://i.loli.net/2019/07/05/5d1ea9a651eca73264.png)  
 3、创建github仓库
-
+![create github](https://i.loli.net/2019/07/05/5d1eab973476e87987.png)  
 4、创建项目并push到远程仓库  
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4b18ef80623.png) 
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4e55bd43175.png) 
