@@ -5,6 +5,7 @@
 3、创建github仓库
 ![create github](https://i.loli.net/2019/07/05/5d1eab973476e87987.png)  
 4、创建项目并push到远程仓库  
+![add](https://i.loli.net/2019/07/05/5d1eac5e2b71816157.png)
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4b18ef80623.png) 
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4e55bd43175.png) 
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4ce0b588241.png)  
