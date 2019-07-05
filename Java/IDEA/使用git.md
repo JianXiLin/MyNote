@@ -10,7 +10,8 @@
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4e55bd43175.png) 
 ![project->github](https://i.loli.net/2019/07/05/5d1eaab4ce0b588241.png)  
 5、远程仓库到IDEA（无该本地仓库）
-
+![git](https://i.loli.net/2019/07/05/5d1ead87bad3544578.png)  
 6、远程仓库到IDEA（已有该本地仓库）
+![git](https://i.loli.net/2019/07/05/5d1ead87d339553826.png)  
 
 
