@@ -4,5 +4,8 @@
 ![error](https://i.loli.net/2019/07/06/5d2091c0d28e841392.png)  
 #### 问题：  
     这是由于jsp在通过对象获取属性值时，  
-	是通过对象中的get方法进行获取值。而原对象缺get方法。  
+    是通过对象中的get方法进行获取值。  
+    而原对象缺get方法。  
   
+###  2、Cannot forward after response has beencommitted  
+请求多次
