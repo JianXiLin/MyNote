@@ -7,5 +7,4 @@
     是通过对象中的get方法进行获取值。  
     而原对象缺get方法。  
   
-###  2、Cannot forward after response has beencommitted  
-请求多次
+###  2、Cannot forward after response has beencommitted  （请求多次提交。）  
