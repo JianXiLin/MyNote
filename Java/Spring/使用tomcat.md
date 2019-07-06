@@ -8,4 +8,5 @@
     而原对象缺get方法。  
   
 ###  2、Cannot forward after response has beencommitted  （请求多次提交。）  
-![error](https://i.loli.net/2019/07/06/5d2092d415b7037090.png)  
+![error](https://i.loli.net/2019/07/06/5d2092d415b7037090.png)   
+参考：https://blog.csdn.net/ljheee/article/details/51049773
