@@ -12,4 +12,5 @@
 参考：https://blog.csdn.net/ljheee/article/details/51049773
 
 ### 3、IDEA创建servlet时找不到 import javax.servlet...相关类包的问题  
-缺少tomcat
+    缺少tomcat的servlet-api.jar。  
+    解决方法：  在lib中导入该包
