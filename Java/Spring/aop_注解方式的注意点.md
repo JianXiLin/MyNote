@@ -4,4 +4,6 @@
    当为环绕通知时，则使用processedJoinPoint类来获取。
 2、切面传入参数。
   注解需使用args属性注入参数名称。
-  不同于标签
+  不同于标签方法：
+	标签方式是通过and 连接 execution和args
+	
