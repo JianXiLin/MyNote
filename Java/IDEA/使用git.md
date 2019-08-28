@@ -1,7 +1,7 @@
 #### 1、整合git  
 ![整合git](https://i.loli.net/2019/07/05/5d1ead87e868046820.png)
 #### 2、添加github仓库、账号密码  
-![add github user](https://i.loli.net/2019/07/05/5d1ea9a651eca73264.png)  #### 3、创建github仓库
+![add github user](https://i.loli.net/2019/07/05/5d1ea9a651eca73264.png)   #### 3、创建github仓库
 ![create github](https://i.loli.net/2019/07/05/5d1eab973476e87987.png)  
 #### 4、创建项目并push到远程仓库  
 ![add](https://i.loli.net/2019/07/05/5d1eac5e2b71816157.png)
