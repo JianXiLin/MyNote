@@ -6,6 +6,6 @@
 |扩展|-|![扩展](https://i.loli.net/2019/10/09/KXWgon3rc6vjDEx.png)|指向基础用例
 |泛化/继承|-|![泛化](https://i.loli.net/2019/10/09/Bmklp7nKXv3Fjx1.png)|指向父用例
 |依赖|-|![依赖](https://i.loli.net/2019/10/09/nEdD7T296iqP5tN.png)|指向被依赖项
-|聚合|-|![聚合](https://i.loli.net/2019/10/09/Ld8N1rpJVYqPaWQ.png)|指向父用例
+|聚合|整体和部分--部分可单独存在|![聚合](https://i.loli.net/2019/10/09/Ld8N1rpJVYqPaWQ.png)|指向父用例
 |组合|-|![组合](https://i.loli.net/2019/10/09/OyrY7EAVeq1Ux4M.png)|指向被依赖项
 
