@@ -2,4 +2,5 @@
 |关系类型|描述|符号|指向|
 |-|-|-|-|
 |关联|存在联系|![关联](https://i.loli.net/2019/10/09/eU6AGjBVJFxOot4.png)|指向消息接收方
-|包含|存在联系|![关联](https://i.loli.net/2019/10/09/eU6AGjBVJFxOot4.png)|指向消息接收方
+|包含|-|![关联](https://i.loli.net/2019/10/09/wY2N5UFM68dcuZC.png)|指向消息接收方
+|包含|-|![关联](https://i.loli.net/2019/10/09/wY2N5UFM68dcuZC.png)|指向消息接收方
