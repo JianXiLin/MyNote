@@ -6,6 +6,6 @@
 |扩展|-|![扩展](https://i.loli.net/2019/10/09/KXWgon3rc6vjDEx.png)|指向基础用例
 |泛化/继承|-|![泛化](https://i.loli.net/2019/10/09/Bmklp7nKXv3Fjx1.png)|指向父用例
 |依赖|-|![依赖](https://i.loli.net/2019/10/09/nEdD7T296iqP5tN.png)|指向被依赖项
-|泛化/继承|-|![泛化](https://i.loli.net/2019/10/09/Bmklp7nKXv3Fjx1.png)|指向父用例
+|聚合|-|![泛化](https://i.loli.net/2019/10/09/Bmklp7nKXv3Fjx1.png)|指向父用例
 |依赖|-|![依赖](https://i.loli.net/2019/10/09/nEdD7T296iqP5tN.png)|指向被依赖项
 
