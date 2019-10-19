@@ -40,5 +40,5 @@
       		 }
 	 });
 ### 2、对象
-	data，url，type、datatype
+	data(可为)，url，type、datatype
 		
