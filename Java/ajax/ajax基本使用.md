@@ -10,5 +10,7 @@
 		xmlhttp.send();	
 	   post:
 		xmlhttp.open("POST","/try/ajax/demo_post2.php",true);
-xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-xmlhttp.send("fname=Henry&lname=Ford");
+		xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xmlhttp.send("fname=Henry&lname=Ford");
+
+### 3、
