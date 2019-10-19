@@ -24,5 +24,5 @@
 	（2）status	200: "OK"
 		404: 未找到页面
 	获取返回信息：
-		XMLHttp.text
-		XMLHttp.
+		XMLHttp.responsetext
+		XMLHttp.responseXML
