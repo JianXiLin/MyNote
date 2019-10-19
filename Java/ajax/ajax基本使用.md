@@ -5,7 +5,10 @@
 ### 2、向服务器发送请求
 	open（method,url,async）
 	send(String)--用于post
-	eg：get：
-				
-  xmlhttp.open("GET","/try/ajax/demo_get.php?t=" + 	Math.random(),true);
+	eg：get：			
+		xmlhttp.open("GET","/try/ajax/demo_get.php?t=" +Math.random(),true);
 		xmlhttp.send();	
+	   post:
+		xmlhttp.open("POST","/try/ajax/demo_post2.php",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("fname=Henry&lname=Ford");
