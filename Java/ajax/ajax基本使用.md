@@ -23,3 +23,6 @@
 		4: 请求已完成，且响应已就绪	
 	（2）status	200: "OK"
 		404: 未找到页面
+	获取返回信息：
+		XMLHttp.text
+		XMLHttp.
