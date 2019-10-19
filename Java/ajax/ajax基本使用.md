@@ -13,7 +13,7 @@
 		xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 		xmlhttp.send("fname=Henry&lname=Ford");
 
-### 3、onreadystatechange事件（函数）
+### 3、onreadystatechange事件（函数）——回调函数
 	XMLHttp中的属性：
 	（1）readyState
 		0: 请求未初始化
