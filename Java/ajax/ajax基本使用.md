@@ -5,3 +5,7 @@
 ### 2、向服务器发送请求
 	open（method,url,async）
 	send(String)--用于post
+	eg：get：
+				
+  xmlhttp.open("GET","/try/ajax/demo_get.php?t=" + 	Math.random(),true);
+		xmlhttp.send();	
