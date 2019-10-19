@@ -31,4 +31,12 @@
 		XMLHttp.responseXML
 
 ## JQuery方式
-###1、
+### 1、
+	```$.ajax({ 
+		url: "test.html", 
+		context: document.body,
+		 success: function(){
+        $(this).addClass("done");
+      }});
+
+```
