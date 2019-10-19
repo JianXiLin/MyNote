@@ -23,8 +23,12 @@
 		2: 请求已接收
 		3: 请求处理中
 		4: 请求已完成，且响应已就绪	
-	（2）status	200: "OK"
+	（2）status	
+		200: "OK"
 		404: 未找到页面
 	获取返回信息：
 		XMLHttp.responsetext
 		XMLHttp.responseXML
+
+## JQuery方式
+###1、
