@@ -4,3 +4,4 @@
 	eg:xmlhttp = new XMLHttpRequest();
 ### 2、向服务器发送请求
 	open（method,url,async）
+	send(String)--用于post
