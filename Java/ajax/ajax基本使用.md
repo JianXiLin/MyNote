@@ -32,11 +32,12 @@
 
 ## JQuery方式
 ### 1、
-	```$.ajax({ 
+	  $.ajax({ 
 		url: "test.html", 
 		context: document.body,
-		 success: function(){
-        $(this).addClass("done");
-      }});
+		success: function(){
+       	 	 	$(this).addClass("done");
+      		       }
+	 });
 
-```
+		
