@@ -9,3 +9,5 @@ select * FROM test ORDER BY CONVERT(class USING gbk),age;
 （1）limit num：获取num个值
 （2）limit start，num：获取从start开始的num个值。
 （3）limit 可结合update等语句使用
+
+3、
