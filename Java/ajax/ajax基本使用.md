@@ -50,9 +50,11 @@
   	则为跨域请求。
    
   ### 解决方法一
-  设置请求头内容"Access-Control-Allow-Origin"，内容为将跨域请求的url 或者为 *
-          例如：
-使用tomcat服务器、servlet
+	设置请求头内容"Access-Control-Allow-Origin"，  
+	内容为将跨域请求的url 或者为 *
+ 	
+	例如：
+	1.使用tomcat服务器、servlet
         （可封装在filter中）
               response.setHeader("Access-Control-Allow-Origin", "*");     //允许所有请求
                response.setHeader("Access-Control-Allow-Origin", "http://www.baidu.com:80");    //只允许来自。    http://www.baidu.com:80的请求
