@@ -58,10 +58,10 @@
         （可封装在filter中）
               response.setHeader("Access-Control-Allow-Origin", "*");     //允许所有请求
                response.setHeader("Access-Control-Allow-Origin", "http://www.baidu.com:80");    //只允许来自。    http://www.baidu.com:80的请求
-     2.使用node.js
+    2.使用node.js 
        
-解决方法二
-     使用JSONP 
+### 解决方法二
+    使用JSONP 
       JSONP是JSON的的一种使用模式。而JSON则是一个数据交换格式（key-value）。
      JSONP模式：在请求中传入callback属性，其为回调函数，共同被请求的服务器返回相应的JSON数据，其数据作为回调函数的参数。
       实际上服务端返回的是一段可执行的JavaScript代码，包含 “ 回调函数名（JSON）”
