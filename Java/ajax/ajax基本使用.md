@@ -42,3 +42,37 @@
 ### 2、对象
 	data(可为JSON)，url，type、datatype
 		
+
+## 跨域问题
+     由于JavaScript中的“同源策略”，即JavaScript出于安全考虑，
+  禁止浏览器中的JavaScript访问其它服务器。对于域名、端口、协议中，有任意一个出现与JavaScript所处环境不一样，则为跨域请求。
+   
+  解决方法一
+         设置请求头内容"Access-Control-Allow-Origin"，内容为将跨域请求的url 或者为 *
+          例如：
+使用tomcat服务器、servlet
+        （可封装在filter中）
+              response.setHeader("Access-Control-Allow-Origin", "*");     //允许所有请求
+               response.setHeader("Access-Control-Allow-Origin", "http://www.baidu.com:80");    //只允许来自。    http://www.baidu.com:80的请求
+         2.使用node.js
+       
+解决方法二
+     使用JSONP 
+      JSONP是JSON的的一种使用模式。而JSON则是一个数据交换格式（key-value）。
+     JSONP模式：在请求中传入callback属性，其为回调函数，共同被请求的服务器返回相应的JSON数据，其数据作为回调函数的参数。
+      实际上服务端返回的是一段可执行的JavaScript代码，包含 “ 回调函数名（JSON）”
+     由于Html中Script标签具有开放性，所以可以使用该标签的src属性请求需跨域的服务器。
+      eg：
+       
+
+一、事件委托：
+     将事件绑定设置在父类、上级元素。
+     在父类事件中，可通过事件函数参数event.target获取到触发事件的子元素。
+
+     DOM0: onclick()等
+     DOM2 : addEventListener(事件类型，事件函数，是否为捕获阶段-默认false)
+     DOM0级别不支持事件句柄在冒泡阶段执行，DOM2、3则支持冒泡事件和捕获。
+
+     Event对象中target与currentTarget：
+       target ：触发的元素
+       currentTarget ：绑定的元素
