@@ -58,7 +58,7 @@
         （可封装在filter中）
               response.setHeader("Access-Control-Allow-Origin", "*");     //允许所有请求
                response.setHeader("Access-Control-Allow-Origin", "http://www.baidu.com:80");    //只允许来自。    http://www.baidu.com:80的请求
-         2.使用node.js
+     2.使用node.js
        
 解决方法二
      使用JSONP 
