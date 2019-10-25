@@ -50,7 +50,7 @@
   	则为跨域请求。
    
   ### 解决方法一
-         设置请求头内容"Access-Control-Allow-Origin"，内容为将跨域请求的url 或者为 *
+  设置请求头内容"Access-Control-Allow-Origin"，内容为将跨域请求的url 或者为 *
           例如：
 使用tomcat服务器、servlet
         （可封装在filter中）
