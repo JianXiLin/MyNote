@@ -44,10 +44,12 @@
 		
 
 ## 跨域问题
-     由于JavaScript中的“同源策略”，即JavaScript出于安全考虑，
-  禁止浏览器中的JavaScript访问其它服务器。对于域名、端口、协议中，有任意一个出现与JavaScript所处环境不一样，则为跨域请求。
+       由于JavaScript中的“同源策略”，即JavaScript出于安全考虑，
+  	禁止浏览器中的JavaScript访问其它服务器。对于域名、端 
+ 	口、协议中，有任意一个出现与JavaScript所处环境不一样，
+  	则为跨域请求。
    
-  解决方法一
+  ### 解决方法一
          设置请求头内容"Access-Control-Allow-Origin"，内容为将跨域请求的url 或者为 *
           例如：
 使用tomcat服务器、servlet
