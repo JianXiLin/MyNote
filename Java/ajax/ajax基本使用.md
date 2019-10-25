@@ -1,4 +1,4 @@
-## JavaScript方式：
+## 一、JavaScript方式：
 ### 1、创建对象
 	XMLHttpRequest，ActiveX(IE5、IE6)
 
@@ -30,7 +30,7 @@
 		XMLHttp.responsetext
 		XMLHttp.responseXML
 
-## JQuery方式
+## 二、JQuery方式
 ### 1、例子
 	  $.ajax({ 
 		url: "test.html", 
@@ -43,7 +43,7 @@
 	data(可为JSON)，url，type、datatype
 		
 
-## 跨域问题
+## 三、跨域问题
        由于JavaScript中的“同源策略”，即JavaScript出于安全考虑，
   	禁止浏览器中的JavaScript访问其它服务器。对于域名、端 
  	口、协议中，有任意一个出现与JavaScript所处环境不一样，
@@ -68,15 +68,3 @@
      由于Html中Script标签具有开放性，所以可以使用该标签的src属性请求需跨域的服务器。
       eg：
        
-
-一、事件委托：
-     将事件绑定设置在父类、上级元素。
-     在父类事件中，可通过事件函数参数event.target获取到触发事件的子元素。
-
-     DOM0: onclick()等
-     DOM2 : addEventListener(事件类型，事件函数，是否为捕获阶段-默认false)
-     DOM0级别不支持事件句柄在冒泡阶段执行，DOM2、3则支持冒泡事件和捕获。
-
-     Event对象中target与currentTarget：
-       target ：触发的元素
-       currentTarget ：绑定的元素
