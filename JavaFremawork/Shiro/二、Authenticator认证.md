@@ -27,12 +27,13 @@ lisi=1111
 ```//用户登录和退出
 @Test
 public void testAuthenticator(){
-// 构建 SecurityManager 工厂，IniSecurityManagerFactory 可以
-从 ini 文件中初始化 SecurityManager 环境
-Factory<SecurityManager> factory = new
-IniSecurityManagerFactory("classpath:shiro.ini");
-//通过工厂获得 SecurityManager 实例
-SecurityManager securityManager = factory.getInstance();
+   // 构建 SecurityManager 工厂，
+   IniSecurityManagerFactory 可以
+   从 ini 文件中初始化 SecurityManager 环境
+  Factory<SecurityManager> factory = new
+  IniSecurityManagerFactory("classpath:shiro.ini");
+   //通过工厂获得 SecurityManager 实例
+   SecurityManager securityManager =factory.getInstance();
 //将 securityManager 设置到运行环境中
 SecurityUtils.setSecurityManager(securityManager);
 //获取 subject 实例
