@@ -18,4 +18,6 @@
     多线程应用并发
 
 ## 3、框架
- 
+ ![image.png](https://i.loli.net/2019/10/29/9QW4irFp5kuUZ7g.png)  
+##### 3.1、Subject 
+	外部应用与之交互，例如Web
