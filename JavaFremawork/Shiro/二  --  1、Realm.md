@@ -8,4 +8,12 @@
         （实现doGetAuthorizaitonInfo-授权）
 #### 2.2.1、代码
 ![image.png](https://i.loli.net/2019/10/29/EfBvkzF8iKXtr63.png)
-#### 2.2.2、设置ini文件
+#### 2.2.2、设置ini文件--配置Realm类
+```
+[main]
+#自定义 realm
+userRealm=cn.siggy.realm.UserRealm
+#将 realm 设置到 securityManager
+securityManager.realms=$userRealm
+
+```
