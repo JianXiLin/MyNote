@@ -9,4 +9,4 @@
 - Authentication:
    身份验证
 - Authorization:
-   授权、
+   授权、认证
