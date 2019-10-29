@@ -23,4 +23,5 @@
 	外部应用与之交互，例如WebMVC。外部通过Subject进行认证，Subject再通过  
     Security Manager进行认证。
 ##### 3.2、Security Manager  
-    继承了Authenticator(认证)、Authorizer、SessionManager接口
+    继承了Authenticator(认证)、Authorizer(授权)、SessionManager(会话管理)接口
+##### 3.3、
