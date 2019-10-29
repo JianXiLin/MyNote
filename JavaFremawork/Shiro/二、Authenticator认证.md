@@ -15,5 +15,12 @@ log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern=%d %p [%c] - %m %n
 
 ```
-#### 2.3、配置shiro。
-ini文件 数据分组
+#### 2.3、配置shiro.ini
+    ini文件——优势：数据分组
+```
+[users]
+zhangsan=1111
+lisi=1111
+
+```
+#### 2.4、
