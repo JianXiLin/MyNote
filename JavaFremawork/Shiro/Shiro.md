@@ -7,3 +7,6 @@
 #### 2、基本功能图：
 ![image.png](https://i.loli.net/2019/10/29/2i4QPAGSRXC5Bo8.png)
 - Authentication:
+   身份验证
+- Authorization:
+   授权、
