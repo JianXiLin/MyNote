@@ -28,3 +28,5 @@
     ModularRealmAuthenticator实现类。可自定义。
 ##### 3.4、Authorizer
     认证
+##### 3.5、Realms
+   领域，数据源。
