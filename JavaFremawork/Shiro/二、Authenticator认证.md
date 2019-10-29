@@ -23,4 +23,35 @@ zhangsan=1111
 lisi=1111
 
 ```
-#### 2.4、
+#### 2.4、代码
+```//用户登录和退出
+@Test
+public void testAuthenticator(){
+// 构建 SecurityManager 工厂，IniSecurityManagerFactory 可以
+从 ini 文件中初始化 SecurityManager 环境
+Factory<SecurityManager> factory = new
+IniSecurityManagerFactory("classpath:shiro.ini");
+//通过工厂获得 SecurityManager 实例
+SecurityManager securityManager = factory.getInstance();
+//将 securityManager 设置到运行环境中
+SecurityUtils.setSecurityManager(securityManager);
+//获取 subject 实例
+Subject subject = SecurityUtils.getSubject();
+//创建用户名,密码身份验证 Token
+UsernamePasswordToken token = new
+UsernamePasswordToken("zhangsan", "1111");
+try {
+//登录，即身份验证
+subject.login(token);
+} catch (AuthenticationException e) {
+e.printStackTrace();
+//身份认证失败
+}
+//断言用户已经登录
+Assert.assertEquals(true, subject.isAuthenticated());
+//退出
+subject.logout();
+}
+
+
+```
