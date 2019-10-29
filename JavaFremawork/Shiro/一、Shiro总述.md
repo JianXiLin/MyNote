@@ -25,4 +25,6 @@
 ##### 3.2、Security Manager  
     继承了Authenticator(认证)、Authorizer(授权)、SessionManager(会话管理)接口
 ##### 3.3、Authenticator
-    ModularRealmAuthenticator实现类。
+    ModularRealmAuthenticator实现类。可自定义。
+##### 3.4、Authorizer
+    认证
