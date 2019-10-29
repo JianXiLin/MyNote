@@ -24,6 +24,7 @@ lisi=1111
 
 ```
 #### 2.4、代码
+![image.png](https://i.loli.net/2019/10/29/ctBSf8o75LpOXAM.png)
 ```//用户登录和退出
 @Test
 public void testAuthenticator(){
