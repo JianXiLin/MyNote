@@ -5,11 +5,13 @@
 ## 2、基本功能图：
 ![image.png](https://i.loli.net/2019/10/29/2i4QPAGSRXC5Bo8.png)
 ##### 2.1、Authentication:
-   身份验证
+    身份验证
 ##### 2.2、Authorization:
-   授权、认证
+    授权、认证
 ##### 2.3、Session Management:
- 会话管理，即用户登录后就是一次会话，在没有退出之前，它的所有信 息都在会话中；会话可以是普通 JavaSE 环境的，也可以是如 Web 环境的；
+    会话管理，即用户登录后就是一次会话，在没有退出之前，  
+    它的所有信 息都在会话中；会话可以是普通 JavaSE 环境的， 
+    也可以是如 Web 环境的；
 ##### 2.4、web Support:
-  web支持
-- 2.5、
+    web支持
+##### 2.5、
