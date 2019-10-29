@@ -20,4 +20,6 @@
 ## 3、框架
  ![image.png](https://i.loli.net/2019/10/29/9QW4irFp5kuUZ7g.png)  
 ##### 3.1、Subject 
-	外部应用与之交互，例如WebMVC。外部通过Subject进行认证，Subject再通过
+	外部应用与之交互，例如WebMVC。外部通过Subject进行认证，Subject再通过  
+    Security Manager进行认证。
+##### 3.
