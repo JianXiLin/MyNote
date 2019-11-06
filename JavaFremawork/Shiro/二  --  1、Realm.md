@@ -20,3 +20,4 @@ securityManager.realms=$userRealm
 ```
 ### 3、使用JdbcReaml
 ![image.png](https://i.loli.net/2019/11/06/8uealmkzYwyLXnj.png)
+![image.png](https://i.loli.net/2019/11/06/Fz2agPurlUD68C3.png)
