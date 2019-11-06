@@ -22,5 +22,5 @@ securityManager.realms=$userRealm
 ![image.png](https://i.loli.net/2019/11/06/8uealmkzYwyLXnj.png)
 #### 3.1、步骤
 1.创建相应的数据库表格
-2.
+2.配置ini文件 设置datasource
 ![image.png](https://i.loli.net/2019/11/06/Fz2agPurlUD68C3.png)
