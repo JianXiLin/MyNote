@@ -18,4 +18,4 @@ userRealm=cn.siggy.realm.UserRealm
 securityManager.realms=$userRealm
 
 ```
-3
+### 3、使用JdbcReaml
