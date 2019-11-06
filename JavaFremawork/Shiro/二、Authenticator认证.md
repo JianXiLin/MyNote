@@ -59,5 +59,5 @@ public void testAuthenticator(){
 #### 2.5、相应的异常(AuthenticationException)
 ![image.png](https://i.loli.net/2019/10/29/iGfPsYqjtc1oTNr.png)
  
-#### 2.6、
-![image.png](1)
+#### 2.6、流程
+![image.png](https://i.loli.net/2019/11/06/vlHoNDhCxQWTPJ4.png)
