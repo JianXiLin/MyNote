@@ -8,4 +8,5 @@ securityManager.realms = \$jdbcRealm,\$userRealm
 #### 默认：AtleastOneSuccessfulStrategy
 
 ## 设置认证策略：
-
+eg:
+![image.png](https://i.loli.net/2019/11/20/wc9XyCPvNRJ8Tho.png)
