@@ -1,10 +1,11 @@
-## 配置多个Realm
+## 一、配置多个Realm
 eg:
 securityManager.realms = \$jdbcRealm,\$userRealm
 
-## 认证策略种类：
+## 二、认证策略种类(三种)：
 ![image.png](https://i.loli.net/2019/11/20/GCfq4Jk1hbEPnRN.png)
 
-默认：AtleastOneSuccessfulStrategy
+#### 默认：AtleastOneSuccessfulStrategy
 
 ## 设置认证策略：
+
