@@ -12,3 +12,4 @@
 传统权限表示规则:8421
 
 #### 四、流程
+![image.png](https://i.loli.net/2019/11/20/PxnNRVOqQ8Mhi3U.png)
