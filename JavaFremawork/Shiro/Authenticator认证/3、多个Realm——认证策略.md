@@ -6,6 +6,7 @@ securityManager.realms = \$jdbcRealm,\$userRealm
 ![image.png](https://i.loli.net/2019/11/20/GCfq4Jk1hbEPnRN.png)
 
 #### 默认：AtleastOneSuccessfulStrategy
+不同： AtLeastOne...：第一个
 
 ## 三、设置认证策略：
 eg:
