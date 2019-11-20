@@ -60,4 +60,4 @@ public void testAuthenticator(){
 ![image.png](https://i.loli.net/2019/10/29/iGfPsYqjtc1oTNr.png)
  
 #### 2.6、流程
-![image.png](https://i.loli.net/2019/11/06/vlHoNDhCxQWTPJ4.png)
+![image.png](https://i.loli.net/2019/11/06/vlHoNDhCxQWTPJ4.png)  
