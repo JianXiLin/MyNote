@@ -10,4 +10,5 @@
        读写XML的支持（JAXB）， 
        读写JSON的支持（Jackson）。
 
-### <mvc:annot
+### \<mvc:annotation-driven>实例的bean:
+  
