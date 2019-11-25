@@ -19,5 +19,6 @@
  ##### 6、ExceptionHandlerExceptionResolver
  ##### 7、ResponseStatusExceptionResolver
  ##### 8、DefaultHandlerExceptionResolver
-   1: 用于处理@RequestMapping注解
-     2:
+     1: @RequestMapping注解的
+     2: Conntrol中url中的映射
+     3：
