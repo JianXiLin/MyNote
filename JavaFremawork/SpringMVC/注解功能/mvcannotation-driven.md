@@ -10,7 +10,7 @@
        读写XML的支持（JAXB）， 
        读写JSON的支持（Jackson）。
 
-### \<mvc:annotation-driven>实例的bean:
+### \<mvc:annotation-driven>声明的bean:
  ##### 1、RequestMappingHandlerMapping
  ##### 2、BeanNameUrlHandlerMapping	
  ##### 3、RequestMappingHandlerAdapter	 
