@@ -12,9 +12,11 @@
 
 ### \<mvc:annotation-driven>实例的bean:
   RequestMappingHandlerMapping
+  
   BeanNameUrlHandlerMapping	
   RequestMappingHandlerAdapter	 
   HttpRequestHandlerAdapter	
   SimpleControllerHandlerAdapter
   ExceptionHandlerExceptionResolver
   ResponseStatusExceptionResolver
+  DefaultHandlerExceptionResolver
