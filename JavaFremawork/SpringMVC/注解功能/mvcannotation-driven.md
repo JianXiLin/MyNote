@@ -11,12 +11,12 @@
        读写JSON的支持（Jackson）。
 
 ### \<mvc:annotation-driven>实例的bean:
-  RequestMappingHandlerMapping
-     用于处理@RequestMapping注解
-  BeanNameUrlHandlerMapping	
-  RequestMappingHandlerAdapter	 
-  HttpRequestHandlerAdapter	
-  SimpleControllerHandlerAdapter
-  ExceptionHandlerExceptionResolver
+ ##### 1、RequestMappingHandlerMapping
+   用于处理@RequestMapping注解
+ ##### 2、BeanNameUrlHandlerMapping	
+ ##### 2、 RequestMappingHandlerAdapter	 
+ ##### 2、HttpRequestHandlerAdapter	
+ ##### 2、SimpleControllerHandlerAdapter
+ ##### 2、ExceptionHandlerExceptionResolver
   ResponseStatusExceptionResolver
   DefaultHandlerExceptionResolver
