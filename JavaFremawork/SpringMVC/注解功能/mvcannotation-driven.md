@@ -12,11 +12,12 @@
 
 ### \<mvc:annotation-driven>实例的bean:
  ##### 1、RequestMappingHandlerMapping
-   用于处理@RequestMapping注解
  ##### 2、BeanNameUrlHandlerMapping	
- ##### 2、 RequestMappingHandlerAdapter	 
- ##### 2、HttpRequestHandlerAdapter	
- ##### 2、SimpleControllerHandlerAdapter
- ##### 2、ExceptionHandlerExceptionResolver
-  ResponseStatusExceptionResolver
-  DefaultHandlerExceptionResolver
+ ##### 3、RequestMappingHandlerAdapter	 
+ ##### 4、HttpRequestHandlerAdapter	
+ ##### 5、SimpleControllerHandlerAdapter
+ ##### 6、ExceptionHandlerExceptionResolver
+ ##### 7、ResponseStatusExceptionResolver
+ ##### 8、DefaultHandlerExceptionResolver
+   1: 用于处理@RequestMapping注解
+     2:
