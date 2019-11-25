@@ -12,7 +12,7 @@
 
 ### \<mvc:annotation-driven>实例的bean:
   RequestMappingHandlerMapping
-  
+     用于处理@RequestMapping注解
   BeanNameUrlHandlerMapping	
   RequestMappingHandlerAdapter	 
   HttpRequestHandlerAdapter	
