@@ -10,7 +10,19 @@
 
 ## 实现步骤：
 #### 1、导入Jar包
-
+```xml
+   <!--Swagger-UI API文档生产工具-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+```
 #### 2、为Controller层代码添加SwaggerUI注解
 @Api、@ApiOperation
 #### 3、
