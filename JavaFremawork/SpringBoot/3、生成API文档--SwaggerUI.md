@@ -60,4 +60,4 @@ public class Swagger2Config {
 #### 3、为Controller层代码添加SwaggerUI注解
 @Api、@ApiOperation
 
-#### 4、为model
+#### 4、为model层类添加注解
