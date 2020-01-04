@@ -61,3 +61,5 @@ public class Swagger2Config {
 @Api、@ApiOperation
 
 #### 4、为model层类添加注解
+@ApiModelProperty
+
