@@ -18,13 +18,13 @@
 	    defaultModelType:
 	<property>:
 	    beginningDelimiter:开始定界符，默认为双引号
-	    endingDelimiter:结束定界符，
+	    endingDelimiter:结束定界符，默认为双引号
 	    javaFileEncoding：指定处理Java文件时的编码
 	<plugin>:
 	
 	<commentGenerator>:
-		设置
-	property:
+	   设置注释生成器
+	  property:
 		 
 	<jdbcConnection>:
 	
