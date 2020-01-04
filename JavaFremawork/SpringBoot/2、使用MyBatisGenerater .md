@@ -15,7 +15,8 @@
 ##### \<context>
 	targetRuntime:
 	defaultModelType:
-###### \<property>子元素指定的属性:
+###### \<context>下的\<property>子元素指定的属性:
+	beginningDelimiter
 	
 	
 
