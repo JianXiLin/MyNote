@@ -12,6 +12,9 @@
         </dependency>
 ```
 #### B、配置变量
+<context>
+	
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
