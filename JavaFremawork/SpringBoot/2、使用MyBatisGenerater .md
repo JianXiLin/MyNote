@@ -23,7 +23,7 @@
 	<plugin>:
 	
 	<commentGenerator>:
-		
+		设置
 	property:
 		 
 	<jdbcConnection>:
