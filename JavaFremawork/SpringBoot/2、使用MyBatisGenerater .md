@@ -25,8 +25,9 @@
 	<commentGenerator>:
 	   设置注释生成器
 	   property:
-	     suppressAllComments：默认
-		 
+	     suppressAllComments：默认false。
+	     suppressDate：设置
+	     addRemarkComments：
 	<jdbcConnection>:
 	
 	<javaModelGenerator>:
