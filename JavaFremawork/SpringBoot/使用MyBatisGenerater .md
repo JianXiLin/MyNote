@@ -58,8 +58,10 @@
     </context>
 
 </generatorConfiguration>
+#### C、编写配置文件
+
 ```
-#### C、编写Generator启动类
+#### D、编写Generator启动类
 ```java
 /**
  * 用于生产MBG的代码
