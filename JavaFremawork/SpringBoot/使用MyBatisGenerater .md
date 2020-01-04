@@ -1,5 +1,5 @@
 ## MyBatisGenerater 
-### 1、概念
+### 1、概念\功能
 通过Generater可实现根据数据库表格生成Dao层代码、mapper代码。
 ### 2、步骤
 #### A、添加jar
@@ -60,6 +60,33 @@
 </generatorConfiguration>
 ```
 #### C、编写Generator启动类
-```xml
+```java
+/**
+ * 用于生产MBG的代码
+ * Created by macro on 2018/4/26.
+ */
+public class Generator {
+    public static void main(String[] args) throws Exception {
+        //MBG 执行过程中的警告信息
+        List<String> warnings = new ArrayList<String>();
+        //当生成的代码重复时，覆盖原代码
+        boolean overwrite = true;
+        //读取我们的 MBG 配置文件
+        InputStream is = Generator.class.getResourceAsStream("/generatorConfig.xml");
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = cp.parseConfiguration(is);
+        is.close();
+
+        DefaultShellCallback callback = new DefaultShellCallback(overwrite);
+        //创建 MBG
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+        //执行生成代码
+        myBatisGenerator.generate(null);
+        //输出警告信息
+        for (String warning : warnings) {
+            System.out.println(warning);
+        }
+    }
+}
 
 ```
