@@ -40,6 +40,7 @@
 	<javaClientGenerator>:
 	   指定生成mapper接口的路径。绝对路径。
 	<table>:
+	   选择数据库表格
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
