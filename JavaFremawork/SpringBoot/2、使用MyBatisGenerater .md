@@ -16,9 +16,9 @@
 	targetRuntime:
 	defaultModelType:
 ###### \<context>下的\<property>子元素指定的属性:
-	beginningDelimiter
-	
-	
+	beginningDelimiter:
+	endingDelimiter:MBG将自动分隔SQL标识符
+	javaFileEncoding
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
