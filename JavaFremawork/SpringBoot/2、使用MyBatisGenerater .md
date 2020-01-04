@@ -20,7 +20,7 @@
 	    beginningDelimiter:开始定界符
 	    endingDelimiter:结束定界符
 	    javaFileEncoding：指定处理Java文件时的编码
-
+	<plugin>:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
