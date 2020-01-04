@@ -30,11 +30,13 @@
 	     addRemarkComments：设置生成的注释中是否含有数据库中表、列的注释。默认false。
 	<jdbcConnection>:
 	   数据库连接
-	
+
 	<javaModelGenerator>:
-	
+	   指定生成model的路径。绝对路径。
 	<sqlMapGenerator>:
+	   指定生成mapper接口的路径。绝对路径。
 	<javaClientGenerator>:
+	   指定生成
 	<table>:
 
 ```xml
