@@ -12,7 +12,7 @@
         </dependency>
 ```
 #### B、配置变量
-##### （1）\<context>
+##### \<context>
 	属性：
 	    targetRuntime:
 	    defaultModelType:
@@ -20,7 +20,7 @@
 	    beginningDelimiter:开始定界符
 	    endingDelimiter:结束定界符
 	    javaFileEncoding：指定处理Java文件时的编码
-##### （2）\<context>
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
