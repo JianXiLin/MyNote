@@ -12,7 +12,9 @@
         </dependency>
 ```
 #### B、配置变量
-<context>
+< context >
+	targetRuntime:
+	defaultModelType:
 	
 
 ```xml
