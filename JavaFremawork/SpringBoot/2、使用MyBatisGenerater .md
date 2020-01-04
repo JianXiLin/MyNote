@@ -17,8 +17,8 @@
 	    targetRuntime:
 	    defaultModelType:
 	<property>:
-	    beginningDelimiter:开始定界符
-	    endingDelimiter:结束定界符
+	    beginningDelimiter:开始定界符，默认为双引号
+	    endingDelimiter:结束定界符，
 	    javaFileEncoding：指定处理Java文件时的编码
 	<plugin>:
 	
