@@ -23,7 +23,9 @@
 	<plugin>:
 	
 	<commentGenerator>:
-	
+		
+	property:
+		 
 	<jdbcConnection>:
 	
 	<javaModelGenerator>:
