@@ -12,10 +12,11 @@
         </dependency>
 ```
 #### B、配置变量
-< context >
+##### \<context>
 	targetRuntime:
 	defaultModelType:
-<
+###### \<property>子元素指定的属性:
+	
 	
 
 ```xml
