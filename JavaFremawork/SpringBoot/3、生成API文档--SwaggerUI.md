@@ -23,6 +23,6 @@
             <version>2.7.0</version>
         </dependency>
 ```
-#### 2、为Controller层代码添加SwaggerUI注解
+#### 2、
+#### 3、为Controller层代码添加SwaggerUI注解
 @Api、@ApiOperation
-#### 3、
