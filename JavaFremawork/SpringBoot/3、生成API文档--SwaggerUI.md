@@ -23,20 +23,8 @@
             <version>2.7.0</version>
         </dependency>
 ```
-#### 2、设置Swagger-UI的Java启动类\配置类
-```java
-package com.macro.mall.tiny.config;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import springfox.documentation.builders.ApiInfoBuilder;
-import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.service.ApiInfo;
-import springfox.documentation.spi.DocumentationType;
-import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
+#### 2、设置Swagger-UI的Java启动类\配置类（位于config模块文件下）
+```java 
 /**
  * Swagger2API文档的配置
  */
@@ -71,3 +59,5 @@ public class Swagger2Config {
 ```
 #### 3、为Controller层代码添加SwaggerUI注解
 @Api、@ApiOperation
+
+#### 4、为model
