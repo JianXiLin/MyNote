@@ -21,6 +21,10 @@
 	    endingDelimiter:结束定界符
 	    javaFileEncoding：指定处理Java文件时的编码
 	<plugin>:
+	
+	<commentGenerator>:
+	
+	<commentGenerator>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
