@@ -15,7 +15,7 @@
 ##### \<context>
 	targetRuntime:
 	defaultModelType:
-###### \<context>下的\<property>子元素指定的属性:
+##### \<context>下的\<property>子元素指定的属性:
 	beginningDelimiter:开始定界符
 	endingDelimiter:结束定界符
 	javaFileEncoding：指定处理Java文件时的编码
