@@ -18,7 +18,8 @@
 ###### \<context>下的\<property>子元素指定的属性:
 	beginningDelimiter:开始定界符
 	endingDelimiter:结束定界符
-	javaFileEncoding：文件编码
+	javaFileEncoding：指定处理Java文件时的编码
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
