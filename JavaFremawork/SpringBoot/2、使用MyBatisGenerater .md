@@ -26,8 +26,9 @@
 	   设置注释生成器
 	   property:
 	     suppressAllComments：默认false。
-	     suppressDate：设置生成的注解是否含时间戳。默认false
-	     addRemarkComments：
+	     suppressDate：设置生成的注释是否含时间戳。默认false
+	     addRemarkComments：设置生成的注释中是否含有数据库中表、列的注释
+		
 	<jdbcConnection>:
 	
 	<javaModelGenerator>:
