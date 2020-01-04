@@ -26,7 +26,7 @@
 	   设置注释生成器
 	   property:
 	     suppressAllComments：是否包含任何注释。默认false。
-	     suppressDate：设置生成的注释是否含时间戳。默认false
+	     suppressDate：设置生成的注释是否不含时间戳。默认false
 	     addRemarkComments：设置生成的注释中是否含有数据库中表、列的注释。默认false。
 	<jdbcConnection>:
 	   数据库连接
