@@ -59,3 +59,7 @@
 
 </generatorConfiguration>
 ```
+#### C、编写Generator启动类
+```xml
+
+```
