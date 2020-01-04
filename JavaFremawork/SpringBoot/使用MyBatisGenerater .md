@@ -58,9 +58,16 @@
     </context>
 
 </generatorConfiguration>
-#### C、编写配置文件
-
 ```
+#### C、编写配置文件
+resource下的generator.properties文件
+```xml
+jdbc.driverClass=com.mysql.cj.jdbc.Driver
+jdbc.connectionURL=jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+jdbc.userId=root
+jdbc.password=Xo159357
+```
+
 #### D、编写Generator启动类
 ```java
 /**
