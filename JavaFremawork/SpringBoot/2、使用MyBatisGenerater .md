@@ -24,7 +24,8 @@
 	
 	<commentGenerator>:
 	   设置注释生成器
-	  property:
+	   property:
+	     suppressAllComments：默认
 		 
 	<jdbcConnection>:
 	
