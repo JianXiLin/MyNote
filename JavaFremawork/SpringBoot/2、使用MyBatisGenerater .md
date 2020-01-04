@@ -34,9 +34,9 @@
 	<javaModelGenerator>:
 	   指定生成model的路径。绝对路径。
 	<sqlMapGenerator>:
-	   指定生成mapper接口的路径。绝对路径。
+	   指定生成mapper.xml的路径。绝对路径。
 	<javaClientGenerator>:
-	   指定生成
+	   指定生成mapper接口的路径。绝对路径。
 	<table>:
 
 ```xml
