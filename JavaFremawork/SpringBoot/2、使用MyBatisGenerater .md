@@ -21,7 +21,9 @@
 	    endingDelimiter:结束定界符，默认为双引号
 	    javaFileEncoding：指定处理Java文件时的编码
 	<plugin>:
-	   
+	   定义插件
+	   eg：
+		
 	<commentGenerator>:
 	   设置注释生成器
 	   property:
