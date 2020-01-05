@@ -3,5 +3,8 @@
 连接Redis命令：redis-cli -h 127.0.0.1 -p 6379
 测试连接：ping
 ## 2、常用命令
-keys pattern（？(1)、*(0-~)、[范围始-范围末]、\）
-——查询
+- keys pattern（？(1)、*(0-~)、[范围始-范围末]、\）
+——查询key
+Exists key
+——判断key是否存在
+
