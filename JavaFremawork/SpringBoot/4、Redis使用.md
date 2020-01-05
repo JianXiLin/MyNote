@@ -16,7 +16,7 @@
 - ==get== \ ==set== key——获取\设置值
 - ==mset== key value[key value...]——设置多个值
 - ==mget== key[key...]——获取多个值
-- ==incr== key——自增设置值，从0开始，1为递增值
+- ==incr== key——自增设置值，从0开始，1为递增
 - ==incrby== key num ——num为递增值
 - ==decr==、decrby ——自减、不能为负值
 - ==append== key value ——后追加
@@ -28,4 +28,4 @@
 - ==hget== region_key key ——获取对应域的值
 - ==hmget== region_key key[key...]
 - ==hgetall== region_key ——获取对应域的所有值
-- 
+- h
