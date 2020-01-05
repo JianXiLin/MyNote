@@ -13,5 +13,6 @@
 ——获取类型
 ## 3、数据类型
 ### 3.1 string
-- get\set key
+- get\set key        ——
 - incr key
+- incrby key num 
