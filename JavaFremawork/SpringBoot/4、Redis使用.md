@@ -51,7 +51,7 @@
 - ==scard== key —— 获取值的数量 
 
 ### 3.5 sorted set （散列表）
-- zadd sset_key key value[key value...] —— 设置值
+- zadd sset_key score value[score value...] —— 设置值
 - zrange sset_key start end （withscores）—— 获取片段值（含key）
-- zremrangebyrank sset_key 
+- zRemrangeByRank sset_key 
 - 
