@@ -38,6 +38,8 @@
 - rpush key value[value...]
 - lpop key ——左删除一个值
 - rpop key
-- llen、
+- llen
+- lrange key startNum-endNum ——获取片段
+- 
 
 
