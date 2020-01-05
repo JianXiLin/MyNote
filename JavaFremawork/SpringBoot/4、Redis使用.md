@@ -52,7 +52,7 @@
 
 ### 3.5 sorted set （散列表）
 - zadd sset_key score value[score value...] —— 设置值
-()
+(值唯一，若值存在则修改score)
 - zrange sset_key start end （withscores）—— 获取片段值（含key）
-- zRemrangeByRank sset_key startScore endScore ——删除片段
-- zremrangebyscore sset_key start
+- zRemrangeByRank sset_key startNum endNum ——删除片段（）
+- zremrangebyscore sset_key startScore endScore——删除片段 
