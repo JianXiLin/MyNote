@@ -45,7 +45,8 @@
 
 ### 3.4 set 
 - sadd key value[value...]
-- srem key value[]
+- srem key value[value...]
+- smembers key
 
 
 
