@@ -46,7 +46,7 @@
 ### 3.4 set 
 - sadd key value[value...]
 - srem key value[value...]
-- smembers key
+- smembers key —— 获取所有值
 
 
 
