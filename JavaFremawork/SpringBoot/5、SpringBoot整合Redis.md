@@ -28,5 +28,5 @@
 - xx.opsForValue().set(key, value); —— 设置值
 - xx.opsForValue().get(key); —— 获取值
 - xx.opsForValue().increment(key,delta); —— 递增
-- xx.expire(key, expire, TimeUnit.SECONDS); ——  
-- xx.delete(key);
+- xx.expire(key, expire, TimeUnit.SECONDS); ——  设置生存时间，秒为单位
+- xx.delete(key); —— 删除值
