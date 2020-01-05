@@ -49,12 +49,16 @@ redis:
 public class RedisServiceImpl implements RedisService {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
-
+     /**
+     * 存储数据
+     */
     @Override
     public void set(String key, String value) {
         stringRedisTemplate.opsForValue().set(key, value);
     }
-
+     /**
+     * 获取数据
+     */
     @Override
     public String get(String key) {
         return stringRedisTemplate.opsForValue().get(key);
