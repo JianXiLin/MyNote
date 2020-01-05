@@ -34,5 +34,7 @@
 - ==hvals== region_key 获取域名中的key
 
 ### 3.3 list（双向链表）
-
+- lpush key value[value...]
+- rpush key value[value...]
+- lpop key val
 
