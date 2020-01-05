@@ -50,5 +50,5 @@
 - ==sismembers== key value —— 是否存在该值
 - ==scard== key —— 获取值的数量 
 
-
+### 3.5 sorted set （散列表）
 
