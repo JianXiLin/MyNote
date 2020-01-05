@@ -51,14 +51,14 @@
 - ==scard== key —— 获取值的数量 
 
 ### 3.5 sorted set （散列表）
-- zadd sset_key score value[score value...] —— 设置值
+- ==zadd== sset_key score value[score value...] —— 设置值
 (值唯一，若值存在则修改score)
-- zrange sset_key start end （withscores）—— 获取片段值（含key）
-- zRemrangeByRank sset_key startNum endNum ——删除片段（以rank排名）
-- zremrangebyscore sset_key startScore endScore——删除片段（以Score排名）
+- ==zrange== sset_key start end （withscores）—— 获取片段值（含key）
+- ==zRemrangeByRank== sset_key startNum endNum ——删除片段（以rank排名）
+- ==zremrangebyscore== sset_key startScore endScore——删除片段（以Score排名）
 
 ## 4、生存时间（TTL）
-- expire key num ——设置生存时间（秒）
-- pexpire key num ——设置生存时间（毫秒） 
-- TTL key —— 查看生成时间
-- persist key —— 删除生存时间
+- ==expire== key num ——设置生存时间（秒）
+- ==pexpire== key num ——设置生存时间（毫秒） 
+- ==TTL== key —— 查看生成时间
+- ==persist== key —— 删除生存时间
