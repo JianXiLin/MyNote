@@ -30,3 +30,5 @@
 - xx.opsForValue().increment(key,delta); —— 递增
 - xx.expire(key, expire, TimeUnit.SECONDS); ——  设置生存时间，秒为单位
 - xx.delete(key); —— 删除值
+
+4、对Redis服务进行封装
