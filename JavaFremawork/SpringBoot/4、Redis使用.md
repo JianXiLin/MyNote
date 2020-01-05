@@ -44,11 +44,11 @@
 - ==lrem== key count value ——删除值（count = 0/全、 > 0/左、< 0/右 ）
 
 ### 3.4 set 
-- sadd key value[value...]
-- srem key value[value...]
-- smembers key —— 获取所有值
-- sismembers key value —— 是否存在该值
-- scard  
+- ==sadd== key value[value...]
+- ==srem== key value[value...]
+- ==smembers== key —— 获取所有值
+- ==sismembers== key value —— 是否存在该值
+- ==scard== key —— 获取值的数量 
 
 
 
