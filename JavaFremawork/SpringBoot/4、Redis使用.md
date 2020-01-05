@@ -36,5 +36,7 @@
 ### 3.3 list（双向链表）
 - lpush key value[value...]
 - rpush key value[value...]
-- lpop key val
+- lpop key 
+- rpop key
+- 
 
