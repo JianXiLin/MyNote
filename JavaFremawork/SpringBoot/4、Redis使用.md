@@ -23,3 +23,4 @@
 - strlen key——获取长度
 
 ### 3.2 hash
+- hset 
