@@ -52,7 +52,7 @@
  \<generatedKey> 中identity为true时：   
 ![title](http://jianxilin.cn-bj.ufileos.com/springboot_note%2F1.png?UCloudPublicKey=eeEcitH-VpAHaQw7ORnJEXFm1MoycdZIbQ3hvq8T&Signature=M3rnHU%2Bw%2FEGWX7v%2Fv6gsD4zSdzU%3D&Expires=1578147059)
  \<generatedKey> 中identity为false时：   
-![title](http://jianxilin.cn-bj.ufileos.com/springboot_note/1.png?UCloudPublicKey=eeEcitH-VpAHaQw7ORnJEXFm1MoycdZIbQ3hvq8T&Signature=MQudrOlA56Dd4RRxs8LUcFhGrlk%3D&Expires=1578147363)
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
