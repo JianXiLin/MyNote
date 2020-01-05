@@ -20,4 +20,5 @@
 - append key value ——后追加
 - strlen key——获取长度
 - MSET key value[key value...]——设置多个值
+- MGET key[key...]——获取多个值
 ### 3.2 hash
