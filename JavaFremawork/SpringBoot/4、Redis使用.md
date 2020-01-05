@@ -47,6 +47,8 @@
 - sadd key value[value...]
 - srem key value[value...]
 - smembers key —— 获取所有值
+- sismembers key value —— 是否存在该值
+-  
 
 
 
