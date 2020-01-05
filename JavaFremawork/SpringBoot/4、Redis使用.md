@@ -15,4 +15,4 @@
 ### 3.1 string
 - get\set key——获取\设置值
 - incr key——自增设置值，从0开始，1为递增值
-- incrby key num ——
+- incrby key num ——num为
