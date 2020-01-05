@@ -22,8 +22,6 @@
 	    javaFileEncoding：指定处理Java文件时的编码
 	<plugin>:
 	   定义插件
-	   eg：
-![title](https://i.loli.net/2020/01/05/MLgHjJzS4c8KwQe.png)
 	<commentGenerator>:
 	   设置注释生成器
 	   property:
@@ -49,6 +47,9 @@
 		sqlStatement：SQL语句类型
 		identity：true 主键不添加到insert中语句
 			  false 则将主键添加到insert语句中。
+定义插件
+eg：
+![title](https://i.loli.net/2020/01/05/MLgHjJzS4c8KwQe.png)
  \<generatedKey> 中identity为true时：   
 ![title](https://i.loli.net/2020/01/05/cVL79DbUEZsd14A.png)
  \<generatedKey> 中identity为false时：   
