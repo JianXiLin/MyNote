@@ -30,5 +30,5 @@
 - ==hgetall== region_key ——获取对应域的所有的key、value
 - ==hexists== region_key 
 - ==hdel==、==hlen==
-- hkeys region_key 获取域名
-- hvals region_key 获取域名中的key
+- ==hkeys== region_key 获取域名
+- ==hvals== region_key 获取域名中的key
