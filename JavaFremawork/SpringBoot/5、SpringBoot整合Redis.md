@@ -31,4 +31,19 @@
 - xx.expire(key, expire, TimeUnit.SECONDS); ——  设置生存时间，秒为单位
 - xx.delete(key); —— 删除值
 
-4、对Redis服务进行封装
+### 4、对Redis服务进行封装
+#### 常数：
+```xml
+# 自定义redis key
+redis:
+  key:
+    prefix:
+      authCode: "portal:authCode:"
+    expire:
+      authCode: 120 # 验证码超期时间
+
+```
+service：
+
+
+
