@@ -50,7 +50,7 @@
 		identity：true 主键不添加到insert中语句
 			  false 则将主键添加到insert语句中。
  \<generatedKey> 中identity为true时：   
-![title](http://jianxilin.cn-bj.ufileos.com/springboot_note%2F1.png?UCloudPublicKey=eeEcitH-VpAHaQw7ORnJEXFm1MoycdZIbQ3hvq8T&Signature=M3rnHU%2Bw%2FEGWX7v%2Fv6gsD4zSdzU%3D&Expires=1578147059)
+![title]()
  \<generatedKey> 中identity为false时：   
 ![title](https://i.loli.net/2020/01/05/aWiMAyVT3kL9GPm.png)
 ```xml
