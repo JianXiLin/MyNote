@@ -27,8 +27,8 @@
 - ==hmset== region_key key value[key value...]
 - ==hget== region_key key ——获取对应域的值
 - ==hmget== region_key key[key...]
-- ==hgetall== region_key ——获取对应域的所有值
+- ==hgetall== region_key ——获取对应域的所有的key、value
 - ==hexists== region_key 
-- hdel、hlen
+- ==hdel==、==hlen==
 - hkeys region_key 获取域名
 - hvals region_key 获取域名中的key
