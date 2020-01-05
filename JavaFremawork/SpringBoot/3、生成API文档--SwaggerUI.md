@@ -63,7 +63,7 @@ public class Swagger2Config {
 #### 4、为model层类添加注解
 @ApiModelProperty
 #### 自动生成：使用MybatisGenerator自动生成model的@ApiModelProperty注解。
-A、修改MybatisGenerator的配置文件
+A、修改MybatisGenerator的自定义注释生成器的代码
 
 B、
 
