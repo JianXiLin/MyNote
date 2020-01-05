@@ -50,7 +50,7 @@
 		identity：true 主键不添加到insert中语句
 			  false 则将主键添加到insert语句中。
  \<generatedKey> 中identity为true时：   
-![title]()
+![title](https://i.loli.net/2020/01/05/cVL79DbUEZsd14A.png)
  \<generatedKey> 中identity为false时：   
 ![title](https://i.loli.net/2020/01/05/aWiMAyVT3kL9GPm.png)
 ```xml
