@@ -24,4 +24,5 @@
 
 ### 3.2 hash
 - hset region_key key value ——设置域及其值
-- hmset 
+- hmset region_key key value[key value...]
+- hget region_key key ——获取值
