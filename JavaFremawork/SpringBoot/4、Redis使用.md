@@ -5,6 +5,6 @@
 ## 2、常用命令
 - keys pattern（？(1)、*(0-~)、[范围始-范围末]、\）
 ——查询key
-Exists key
+- Exists key
 ——判断key是否存在
 
