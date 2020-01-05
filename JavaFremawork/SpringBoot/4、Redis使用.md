@@ -51,4 +51,4 @@
 - ==scard== key —— 获取值的数量 
 
 ### 3.5 sorted set （散列表）
-
+- zadd sset_key key value[key value...]
