@@ -54,5 +54,7 @@
 - zadd sset_key score value[score value...] —— 设置值
 (值唯一，若值存在则修改score)
 - zrange sset_key start end （withscores）—— 获取片段值（含key）
-- zRemrangeByRank sset_key startNum endNum ——删除片段（）
-- zremrangebyscore sset_key startScore endScore——删除片段 
+- zRemrangeByRank sset_key startNum endNum ——删除片段（以rank排名）
+- zremrangebyscore sset_key startScore endScore——删除片段（以Score排名）
+
+## 4、设置
