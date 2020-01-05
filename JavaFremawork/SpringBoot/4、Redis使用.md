@@ -32,3 +32,6 @@
 - ==hdel==、==hlen==
 - ==hkeys== region_key 获取域名
 - ==hvals== region_key 获取域名中的key
+
+### 3.3 list
+
