@@ -26,4 +26,7 @@
 ### 3、同Spring中的RedisTemplate实现对Redis的操作
 #### StringRedisTemplate中Redis的字符串操作
 - xx.opsForValue().set(key, value);
+- xx.opsForValue().get(key);
+- xx.expire(key, expire, TimeUnit.SECONDS);
+- xx.opsForValue().increment(key,delta);
 - 
