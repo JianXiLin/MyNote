@@ -39,7 +39,7 @@
 - lpop key ——左删除一个值
 - rpop key
 - llen
-- lrange key startNum-endNum ——获取片段
-- 
+- lrange key start-end ——获取片段
+- lrem key
 
 
