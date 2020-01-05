@@ -23,5 +23,5 @@
 - strlen key——获取长度
 
 ### 3.2 hash
-- hset key region_key value ——设置域及其值
+- hset region_key key value ——设置域及其值
 - hmset 
