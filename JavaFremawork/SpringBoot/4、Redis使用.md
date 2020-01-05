@@ -39,8 +39,9 @@
 - lpop key ——左删除一个值
 - rpop key
 - llen
+- lindex key index ——获取指定值
 - lrange key start-end ——获取片段
 - lrem key count value ——删除值（count = 0/全、 > 0/左、< 0/右 ）
-- lindex
+
 
 
