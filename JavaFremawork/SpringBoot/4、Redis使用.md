@@ -17,4 +17,6 @@
 - incr key——自增设置值，从0开始，1为递增值
 - incrby key num ——num为递增值
 - decr、decrby ——自减、不能为负值
+- append key value ——后追加
+- strlen key——获取长度
 - 
