@@ -63,6 +63,7 @@ public class Swagger2Config {
 #### 4、为model层类添加注解
 @ApiModelProperty
 #### 自动生成：使用MybatisGenerator自动生成model的@ApiModelProperty注解。
+A、
 
-
+#### 5、启动Swagger-UI的Java启动类。
 
