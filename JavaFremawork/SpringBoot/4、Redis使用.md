@@ -27,4 +27,4 @@
 - ==hmset== region_key key value[key value...]
 - ==hget== region_key key ——获取对应域的值
 - ==hmget== region_key key[key...]
-- hgetall region_k
+- hgetall region_key ——获取对应
