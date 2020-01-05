@@ -57,4 +57,5 @@
 - zRemrangeByRank sset_key startNum endNum ——删除片段（以rank排名）
 - zremrangebyscore sset_key startScore endScore——删除片段（以Score排名）
 
-## 4、设置
+## 4、生存时间（TTL）
+-expire key num ——
