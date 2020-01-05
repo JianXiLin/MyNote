@@ -23,4 +23,4 @@
         min-idle: 0 # 连接池中的最小空闲连接
     timeout: 3000ms # 连接超时时间（毫秒）
 ```
-### 3、
+### 3、同Spring中的RedisTemplate
