@@ -23,7 +23,7 @@
 	<plugin>:
 	   定义插件
 	   eg：
-		
+![title](https://i.loli.net/2020/01/05/MLgHjJzS4c8KwQe.png)
 	<commentGenerator>:
 	   设置注释生成器
 	   property:
