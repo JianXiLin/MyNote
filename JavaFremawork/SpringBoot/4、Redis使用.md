@@ -28,4 +28,5 @@
 - ==hget== region_key key ——获取对应域的值
 - ==hmget== region_key key[key...]
 - ==hgetall== region_key ——获取对应域的所有值
-- h
+- ==hexists== region_key 
+- 
