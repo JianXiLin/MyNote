@@ -40,6 +40,6 @@
 - rpop key
 - llen
 - lrange key start-end ——获取片段
-- lrem key
+- lrem key count value ——删除值（count = 0 ）
 
 
