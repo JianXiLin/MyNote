@@ -8,4 +8,4 @@
 - Exists key
 ——判断key是否存在
 - del key[key...]
-——删除key，返回数量
+——删除key，返回删除数量
