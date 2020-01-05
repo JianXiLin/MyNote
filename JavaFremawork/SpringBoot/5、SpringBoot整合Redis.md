@@ -63,17 +63,24 @@ public class RedisServiceImpl implements RedisService {
     public String get(String key) {
         return stringRedisTemplate.opsForValue().get(key);
     }
-
+    /**
+     * 设置超期时间
+     */
     @Override
     public boolean expire(String key, long expire) {
         return stringRedisTemplate.expire(key, expire, TimeUnit.SECONDS);
     }
-
+    /**
+     * 删除数据
+     */
     @Override
     public void remove(String key) {
         stringRedisTemplate.delete(key);
     }
-
+      /**
+     * 自增操作
+     * @param delta 自增步长
+     */
     @Override
     public Long increment(String key, long delta) {
         return stringRedisTemplate.opsForValue().increment(key,delta);
@@ -81,8 +88,6 @@ public class RedisServiceImpl implements RedisService {
 }
 
 ```
-#### controller:
-
 
 
 
