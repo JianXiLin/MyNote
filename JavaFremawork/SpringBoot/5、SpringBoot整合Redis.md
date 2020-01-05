@@ -24,4 +24,4 @@
     timeout: 3000ms # 连接超时时间（毫秒）
 ```
 ### 3、同Spring中的RedisTemplate实现对Redis的操作
-#### StringRedisTemplate
+#### StringRedisTemplate实现对
