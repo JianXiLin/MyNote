@@ -130,7 +130,7 @@ public class CommentGenerator extends DefaultCommentGenerator {
 }
 
 ```
-B、
+
 
 #### 5、启动Swagger-UI的Java启动类。
 
