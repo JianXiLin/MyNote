@@ -58,7 +58,6 @@
 - zremrangebyscore sset_key startScore endScore——删除片段（以Score排名）
 
 ## 4、生存时间（TTL）
--expire key num ——设置生成时间
--TTL key —— 查看生成时间
-peres
-PERSIST
+- expire key num ——设置生成时间
+- TTL key —— 查看生成时间
+- persist key —— 删除生存时间
