@@ -53,5 +53,5 @@
 ### 3.5 sorted set （散列表）
 - zadd sset_key score value[score value...] —— 设置值
 - zrange sset_key start end （withscores）—— 获取片段值（含key）
-- zRemrangeByRank sset_key 
+- zRemrangeByRank sset_key startScorc
 - 
