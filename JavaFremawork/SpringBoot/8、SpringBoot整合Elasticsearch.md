@@ -7,4 +7,7 @@
     <artifactId>spring-boot-starter-data-elasticsearch<artifactId>
 </dependency>
 ```
-2、
+2、添加SpringBoot配置
+```xml
+
+```
