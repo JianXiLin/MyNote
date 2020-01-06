@@ -22,9 +22,11 @@
 |W |有效工作日，用于==DayofMonth==，|
 
 ### 3、SpringTask相关注解
-- #### @Scheduled
 - #### @Configuration
-@EnableScheduling
+- #### @EnableScheduling
+- #### @Scheduled
+
+
 
 ## 二、SpringBoot中使用SpringTask
 ### 1、添加依赖
@@ -43,6 +45,7 @@ public class SpringTaskConfig {
 ```
 ### 3、执行定时任务。
 在Spring中注入定时任务类，可命名为OrderTimeOutCancelTask。
+（放置于component）
 eg：
 ```java
 /**
