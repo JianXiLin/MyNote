@@ -22,7 +22,9 @@
 |W |有效工作日，用于==DayofMonth==，|
 
 ### 3、SpringTask相关注解
-
+- #### @Scheduled
+- #### @Configuration
+@EnableScheduling
 
 ## 二、SpringBoot中使用SpringTask
 ### 1、添加依赖
