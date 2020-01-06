@@ -1,8 +1,15 @@
 ## 一、SpringTask内容
 ### 1、Cron表达式。
-|时间元素|字符|范围|
+|时间元素|可用字符|范围|
 |-|-|-|
-|Seconds（秒）||content3|
+|Seconds（秒）|， -  *  / |0-59|
+|Minutes（分）|， -  *  / |0-59|
+|Seconds（时）|， -  *  / |0-59|
+|Seconds（秒）|， -  *  / |0-59|
+|Seconds（秒）|， -  *  / |0-59|
+|Seconds（秒）|， -  *  / |0-59|
+|Seconds（秒）|， -  *  / |0-59|
+
 
 ### 2、SpringTask相关注解
 
