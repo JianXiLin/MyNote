@@ -24,5 +24,5 @@ Elasticsearch将
 ### 5、数据类型
 keyword、text、Integer...
 - keyword: 字符串，不会进行分词，可直接建立倒排索引。
-- text：字符串，会进行分词，之后再通过keyword建立倒排索引
+- text：字符串，会进行分词（借助于分词工具），之后再通过keyword建立倒排索引
 
