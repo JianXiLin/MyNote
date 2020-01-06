@@ -56,5 +56,6 @@ public class EsProduct implements Serializable {
    get/set方法......
 }
 ```
-4、
+### 4、添加EsProductRepository接口用于操作Elasticsearch
+通过继承ElasticsearchRepository接口，
 
