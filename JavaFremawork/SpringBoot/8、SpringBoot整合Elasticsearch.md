@@ -78,7 +78,7 @@ public interface EsProductRepository extends ElasticsearchRepository<EsProduct, 
 }
 ```
 
-5、通过调用xxxRepository接口实现对Elasticsearch的操作。
+### 5、通过调用xxxRepository接口实现对Elasticsearch的操作。
 
 
 
