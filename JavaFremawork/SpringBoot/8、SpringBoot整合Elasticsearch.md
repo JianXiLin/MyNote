@@ -17,5 +17,8 @@ data:
     cluster-name: elasticsearch # es集群的名称
 ```
 ### 3、设置文档对象(XXProduct)
-可位于
+可设置位于nosql.elasticsearch.document
+```java
+
+```
 
