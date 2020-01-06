@@ -6,9 +6,8 @@
 |Minutes（分）|， -  *  / |0-59|
 |Hours（时）|， -  *  / |0-23|
 |DayofMonth（月份）|， -  *  /  ?  L  W |0-31|
-|Month（月）|， -  *  / |0-59|
-|Seconds（秒）|， -  *  / |0-59|
-|Seconds（秒）|， -  *  / |0-59|
+|Month（月份）|， -  *  / |1-12|
+|DayofWeek（秒）|， -  *  / ? L #|1-7或SUN-SAT|
 
 
 ### 2、SpringTask相关注解
