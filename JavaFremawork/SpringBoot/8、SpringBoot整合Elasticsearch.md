@@ -16,7 +16,7 @@ data:
     cluster-nodes: 127.0.0.1:9300 # es的连接地址及端口号
     cluster-name: elasticsearch # es集群的名称
 ```
-### 3、设置文档对象(XXProduct)——==需序列化==
+### 3、设置文档对象(xxx)——==需序列化==
 可设置位于nosql.elasticsearch.document
 ```java
 /**
@@ -53,7 +53,7 @@ public class EsProduct implements Serializable {
     @Field(type =FieldType.Nested)
     private List<EsProductAttributeValue> attrValueList;
 
-   get/set方法......
+    get/set方法......
 }
 ```
 ### 4、添加EsProductRepository接口用于操作Elasticsearch
@@ -76,6 +76,6 @@ public interface EsProductRepository extends ElasticsearchRepository<EsProduct, 
     Page<EsProduct> findByNameOrSubTitleOrKeywords(String name, String subTitle, String keywords, Pageable page);
 
 }
-
 ```
+
 
