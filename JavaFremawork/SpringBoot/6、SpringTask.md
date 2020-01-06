@@ -18,7 +18,7 @@
 |？|匹配任意字符，用于DayofXX，每天触发一次|
 |# |第几个星期几，用于DayofWeek，星期几#第几个|
 |L |最后，用于DayofXX，eg：DayofWeek的5L即最后一个星期六|
-|W ||
+|W |有效工作日，用于DayofMonth，|
 
 ### 3、SpringTask相关注解
 
