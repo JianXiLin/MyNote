@@ -16,3 +16,7 @@ public class SpringTaskConfig {
 
 ```
 ### 3、执行定时任务。
+在Spring中注入定时任务类，可命名为OrderTimeOutCancelTask。
+```java
+
+```
