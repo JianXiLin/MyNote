@@ -57,5 +57,25 @@ public class EsProduct implements Serializable {
 }
 ```
 ### 4、添加EsProductRepository接口用于操作Elasticsearch
-通过继承ElasticsearchRepository接口，添加Elasticsearch的相关操作，之后在通过添加衍生的方法，实现自定义查询方法
+通过继承ElasticsearchRepository接口，添加Elasticsearch的相关操作，之后在通过添加衍生的方法，实现自定义查询方法。
+```java
+/**
+ * 商品ES操作类
+ * Created by macro on 2018/6/19.
+ */
+public interface EsProductRepository extends ElasticsearchRepository<EsProduct, Long> {
+    /**
+     * 搜索查询
+     *
+     * @param name              商品名称
+     * @param subTitle          商品标题
+     * @param keywords          商品关键字
+     * @param page              分页信息
+     * @return
+     */
+    Page<EsProduct> findByNameOrSubTitleOrKeywords(String name, String subTitle, String keywords, Pageable page);
+
+}
+
+```
 
