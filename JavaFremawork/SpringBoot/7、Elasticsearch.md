@@ -23,6 +23,6 @@ Elasticsearch将
 
 ### 5、数据类型
 keyword、text、Integer...
-keyword:不用进行分词
-text：
+- keyword: 字符串，不会进行分词
+- text：字符串，会进行分词
 
