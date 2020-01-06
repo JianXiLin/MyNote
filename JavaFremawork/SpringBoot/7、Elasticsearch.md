@@ -21,3 +21,8 @@ Elasticsearch将
 (3)、将数据库表中的一个记录 -> json格式数据
 (4)、
 
+### 5、数据类型
+keyword、text、Integer...
+keyword:不用进行分词
+text：
+
