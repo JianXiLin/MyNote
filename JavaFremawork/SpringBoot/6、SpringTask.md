@@ -17,8 +17,8 @@
 |/ |间断性触发，n/m，从n开始每m触发一次|
 |？|匹配任意字符，用于DayofXX，每天触发一次|
 |# |第几个星期几，用于DayofWeek，星期几#第几个|
-|L |最后，用于DayofXX，|
-|W |列出范围，范围内的值都触发一次|
+|L |最后，用于DayofXX，eg：DayofWeek的5L即最后一个星期六|
+|W ||
 
 ### 3、SpringTask相关注解
 
