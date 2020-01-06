@@ -20,7 +20,6 @@ Elasticsearch将
 (2)、创建一个类型Poem（即一个数据库表） -> json格式数据
 (3)、将数据库表中的一个记录 -> json格式数据
 (4)、
-
 ### 5、数据类型
 keyword、text、Integer...
 - keyword: 字符串，不会进行分词，可直接建立倒排索引。
