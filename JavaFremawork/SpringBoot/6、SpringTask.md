@@ -9,9 +9,9 @@
 |Month（月份）|， -  *  / |1-12|
 |DayofWeek（秒）|， -  *  / ? L #|1-7或SUN-SAT|
 ### 2、符号
-|符号|column2|column3|
-|-|-|-|
-|content1|content2|content3|
+|符号|作用|
+|-|-|
+|，||
 
 ### 3、SpringTask相关注解
 
