@@ -56,7 +56,7 @@ public class EsProduct implements Serializable {
     get/set方法......
 }
 ```
-### 4、添加EsProductRepository接口用于操作Elasticsearch
+### 4、添加xxxRepository接口用于操作Elasticsearch
 通过继承ElasticsearchRepository接口，添加Elasticsearch的相关操作，之后在通过添加衍生的方法，实现自定义查询方法。
 ```java
 /**
@@ -78,6 +78,7 @@ public interface EsProductRepository extends ElasticsearchRepository<EsProduct, 
 }
 ```
 
-5、通过调用
+5、通过调用xxxRepository接口实现对Elasticsearch的操作。
+
 
 
