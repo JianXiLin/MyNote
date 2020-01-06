@@ -55,6 +55,6 @@ public class EsProduct implements Serializable {
 
    get/set方法......
 }
-
 ```
+4、
 
