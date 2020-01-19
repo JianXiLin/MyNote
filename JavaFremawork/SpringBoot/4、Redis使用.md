@@ -59,6 +59,7 @@
 - ==llen== 获取长度
 - ==lrange== key start-end ——获取片段
 - ==lrem== key count value ——删除n个值（count = 0/全、 > 0/左、< 0/右 ）
+- ltrim key startIndex endIndex 截取 
 
 ### 3.4 set 
 - ==sadd== key value[value...]
