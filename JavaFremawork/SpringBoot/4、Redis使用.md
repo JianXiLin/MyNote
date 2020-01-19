@@ -65,7 +65,7 @@
 - ==linsert== key before/after value newValue 在某个值前面/后面插入一个值 
 
 ### 3.4 set 
-- ==sadd== key value[value...]
+- ==sadd== key value[value...] 若
 - ==srem== key value[value...]
 - ==smembers== key —— 获取所有值
 - ==sismembers== key value —— 是否存在该值
