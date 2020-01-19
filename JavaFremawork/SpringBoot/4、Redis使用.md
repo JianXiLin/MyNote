@@ -41,7 +41,8 @@
 
 ### 3.2 （重点） hash 
 k-v，v中也为k-v， 
-以下KEY表hash的key，key表示hash的key对应
+以下region_key表示hash的key，key表示hash的value中的key
+
 - ==hset== region_key key value ——设置域及其值
 - ==hmset== region_key key value[key value...]
 - ==hget== region_key key ——获取对应域的值
