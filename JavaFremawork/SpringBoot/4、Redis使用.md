@@ -53,7 +53,7 @@ k-v，v中也为k-v，
 	- ==hvals== region_key ——获取hash中所有的value
 - ==hexists== region_key 
 - ==hdel==、==hlen== region_key
-
+- 
 
 ### 3.3 list（双向链表）
 - ==lpush== key value[value...] ——左添加值
