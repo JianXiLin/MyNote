@@ -9,18 +9,35 @@
 ——判断key是否存在
 - del key[key...]
 ——删除key，返回删除数量
+- move key DB
+——移动key到某号库
 - Type key
 ——获取类型
+- DBSize
+——查看key数量
+- flushDB 、 flushAll
+——清除本仓库、清除所有库 
+
+
 ## 3、数据类型
+#### 五大数据类型：String、Hash、List、Set、Sorted set
 ### 3.1 string
-- ==get== \ ==set== key——获取\设置值
+- ==get== \ set key——获取\设置值
+  已存在则覆盖
 - ==mset== key value[key value...]——设置多个值
-- ==mget== key[key...]——获取多个值
-- ==incr== key——自增设置值，从0开始，1为递增
-- ==incrby== key num ——num为递增值
-- ==decr==、decrby ——自减、不能为负值
+- ==mget== key[key...]——获取多个值 
 - ==append== key value ——后追加
 - ==strlen== key——获取长度
+- ==incr== key——自增设置值，从0开始，1为递增
+- incrby key num ——num为递增值
+- ==decr==、decrby ——自减、不能为负值
+- ==getRange== key start end 获取范围内的值 (0到-1则是全部)
+- ==setRange== key start value... 设置某范围的值
+- ==setex== key timeout秒 value 设置过期时间 set with expire
+- ==setnx== key value 设置值 set if not exist
+  若已存在则不修改
+- ==msetnx== 多个设值
+  若有一个不存在则无法设置
 
 ### 3.2 hash
 - ==hset== region_key key value ——设置域及其值
@@ -39,9 +56,9 @@
 - ==lpop== key ——左删除一个值
 - ==rpop== key
 - ==llen==
-- ==lindex== key index ——获取指定值
+- ==lindex== key index ——获取指定值 （从0开始）
 - ==lrange== key start-end ——获取片段
-- ==lrem== key count value ——删除值（count = 0/全、 > 0/左、< 0/右 ）
+- ==lrem== key count value ——删除n个值（count = 0/全、 > 0/左、< 0/右 ）
 
 ### 3.4 set 
 - ==sadd== key value[value...]
@@ -61,4 +78,7 @@
 - ==expire== key num ——设置生存时间（秒）
 - ==pexpire== key num ——设置生存时间（毫秒） 
 - ==TTL== key —— 查看生成时间
+  -1：表示永不过期
+-2：表示已过期（即已删除）
+
 - ==persist== key —— 删除生存时间
