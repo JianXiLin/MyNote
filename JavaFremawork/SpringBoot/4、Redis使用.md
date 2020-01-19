@@ -97,7 +97,8 @@ zset： key scoure1 v1 scoure2 v2...
 - ==zRemrangeByRank== key startNum endNum ——删除片段（以rank排名）
 - ==zremrangebyscore== key startScore endScore——删除片段（以Score排名）
   (Score 表示不包含该score
-  limit 
+  limit start num 
+  withscores
 
 ## 4、生存时间（TTL）
 - ==expire== key num ——设置生存时间（秒）
