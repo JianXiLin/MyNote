@@ -71,7 +71,7 @@
 - ==smembers== key —— 获取所有值
 - ==sismembers== key value —— 是否存在该值
 - ==scard== key —— 获取值的数量 
-- ==
+- ==srandmember== key 数量 ——随机获取set中几个值
 
 ### 3.5 sorted set （散列表）
 - ==zadd== sset_key score value[score value...] —— 设置值
