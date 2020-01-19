@@ -59,13 +59,14 @@
 - ==llen== 获取长度
 - ==lrange== key start-end ——获取片段
 - ==lrem== key count value ——删除n个值（count = 0/全、 > 0/左、< 0/右 ）
-- ==ltrim== key startIndex endIndex 截取value中某范围的值，重新赋给value 
-- ==rpoplpush== key1 key2 将key1中的尾部元素添加到key2值的0位置。 
-- ==lset== key index value 设置某个位置的值
-- ==linsert== key before/after value newValue 在某个值前面/后面插入一个值 
+- ==ltrim== key startIndex endIndex ——截取value中某范围的值，重新赋给value 
+- ==rpoplpush== key1 key2 ——将key1中的尾部元素添加到key2值的0位置。 
+- ==lset== key index value ——设置某个位置的值
+- ==linsert== key before/after value newValue ——在某个值前面/后面插入一个值 
 
 ### 3.4 set 
-- ==sadd== key value[value...] 若
+- ==sadd== key value[value...] 
+  若有已存在的，不报错，只加不存在的值
 - ==srem== key value[value...]
 - ==smembers== key —— 获取所有值
 - ==sismembers== key value —— 是否存在该值
