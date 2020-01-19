@@ -47,8 +47,8 @@
 - ==hgetall== region_key ——获取对应域的所有的key、value
 - ==hexists== region_key 
 - ==hdel==、==hlen==
-- ==hkeys== region_key 获取域名
-- ==hvals== region_key 获取域名中的key
+- ==hkeys== region_key ——获取域名
+- ==hvals== region_key ——获取域名中的key
 
 ### 3.3 list（双向链表）
 - ==lpush== key value[value...] ——左添加值
@@ -56,7 +56,7 @@
 - ==lpop== key ——左删除一个值
 - ==rpop== key
 - ==lindex== key index ——获取指定值 （从0开始）
-- ==llen== 获取长度
+- ==llen== ——获取长度
 - ==lrange== key start-end ——获取片段
 - ==lrem== key count value ——删除n个值（count = 0/全、 > 0/左、< 0/右 ）
 - ==ltrim== key startIndex endIndex ——截取value中某范围的值，重新赋给value 
@@ -71,6 +71,7 @@
 - ==smembers== key —— 获取所有值
 - ==sismembers== key value —— 是否存在该值
 - ==scard== key —— 获取值的数量 
+- ==
 
 ### 3.5 sorted set （散列表）
 - ==zadd== sset_key score value[score value...] —— 设置值
