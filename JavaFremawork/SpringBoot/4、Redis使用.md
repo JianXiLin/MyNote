@@ -65,13 +65,13 @@
 - ==linsert== key before/after value newValue ——在某个值前面/后面插入一个值 
 
 ### 3.4 set 
-- ==sadd== key value[value...] 
+- ==sadd== key value[value...] ——添加
   若有已存在的，不报错，只加不存在的值
-- ==srem== key value[value...]
+- ==srem== key value[value...] ——删除
 - ==smembers== key —— 获取所有值
 - ==sismembers== key value —— 是否存在该值
 - ==scard== key —— 获取值的数量 
-- ==srandmember== key 数量 ——随机获取set中几个值
+- ==srandmember== key 整数数量 ——随机获取set中几个值
 
 ### 3.5 sorted set （散列表）
 - ==zadd== sset_key score value[score value...] —— 设置值
