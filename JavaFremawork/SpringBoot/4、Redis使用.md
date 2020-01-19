@@ -88,9 +88,9 @@ k-v，v中也为k-v，
 3.并集 sunion
 
 ### 3.5 zset——sorted set （散列表）
-在set的基础上，添加一个score值。
+set的基础上，在value值中添加一个score值。
 set：key v1 v2 v3...
-zset： key scoure v1 
+zset： key scoure1 v1 scoure2 v2... 
 - ==zadd== sset_key score value[score value...] —— 设置值
 (值唯一，若值存在则修改score)
 - ==zrange== sset_key start end （withscores）—— 获取片段值（含key）
