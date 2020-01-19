@@ -39,7 +39,8 @@
 - ==msetnx== 多个设值
   若有一个不存在则无法设置
 
-### 3.2 （重点） hash
+### 3.2 （重点） hash 
+k-v，v中也为k-v
 - ==hset== region_key key value ——设置域及其值
 - ==hmset== region_key key value[key value...]
 - ==hget== region_key key ——获取对应域的值
