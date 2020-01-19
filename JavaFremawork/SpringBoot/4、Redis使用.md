@@ -100,6 +100,7 @@ zset： key scoure1 v1 scoure2 v2...
   (Score 表示不包含该score
   limit start num 
   withscores
+- ==zcard==  
 
 ## 4、生存时间（TTL）
 - ==expire== key num ——设置生存时间（秒）
