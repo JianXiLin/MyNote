@@ -60,7 +60,7 @@
 - ==lrange== key start-end ——获取片段
 - ==lrem== key count value ——删除n个值（count = 0/全、 > 0/左、< 0/右 ）
 - ==ltrim== key startIndex endIndex 截取value中某范围的值，重新赋给value 
-- ==lpoprpush== key1 key2 
+- ==rpoplpush== key1 key2 将key1中的尾部元素放置到key2值的第0 
 ### 3.4 set 
 - ==sadd== key value[value...]
 - ==srem== key value[value...]
