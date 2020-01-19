@@ -96,7 +96,8 @@ zset： key scoure1 v1 scoure2 v2...
 - ==zrem== key value ——删除值
 - ==zrange== key start end （withscores）—— 获取片段值（含key）
 - ==zRemrangeByRank== key startNum endNum ——删除片段（以rank排名）
-- ==zremrangebyscore== key startScore endScore——删除片段（以Score排名）
+- ==zRemrangeByS
+core== key startScore endScore——删除片段（以Score排名）
   (Score 表示不包含该score
   limit start num 
   withscores
