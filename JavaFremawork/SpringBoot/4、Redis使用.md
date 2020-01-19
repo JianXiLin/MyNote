@@ -95,7 +95,7 @@ zset： key scoure1 v1 scoure2 v2...
 (值唯一，若值存在则修改score)
 - ==zrange== key start end （withscores）—— 获取片段值（含key）
 - ==zRemrangeByRank== key startNum endNum ——删除片段（以rank排名）
-- ==zremrangebyscore== sset_key startScore endScore——删除片段（以Score排名）
+- ==zremrangebyscore== key startScore endScore——删除片段（以Score排名）
 
 ## 4、生存时间（TTL）
 - ==expire== key num ——设置生存时间（秒）
