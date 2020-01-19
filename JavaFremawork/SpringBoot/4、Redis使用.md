@@ -91,10 +91,10 @@ k-v，v中也为k-v，
 set的基础上，在value值中添加一个score值。
 set：key v1 v2 v3...
 zset： key scoure1 v1 scoure2 v2... 
-- ==zadd== sset_key score value[score value...] —— 设置值
+- ==zadd== key score value[score value...] —— 设置值
 (值唯一，若值存在则修改score)
-- ==zrange== sset_key start end （withscores）—— 获取片段值（含key）
-- ==zRemrangeByRank== sset_key startNum endNum ——删除片段（以rank排名）
+- ==zrange== key start end （withscores）—— 获取片段值（含key）
+- ==zRemrangeByRank== key startNum endNum ——删除片段（以rank排名）
 - ==zremrangebyscore== sset_key startScore endScore——删除片段（以Score排名）
 
 ## 4、生存时间（TTL）
