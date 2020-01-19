@@ -56,7 +56,7 @@ k-v，v中也为k-v，
 - #### 增长值
 	- ==hincrby== region_key key 增值 
 	- ==hincrbyfloat== region_key key 增值 
-- hsetnx region_key key value ——如果
+- ==hsetnx== region_key key value ——如果不存在则可添加（返回0/1，0已存在，1不存在）
 
 ### 3.3 list（双向链表）
 - ==lpush== key value[value...] ——左添加值
