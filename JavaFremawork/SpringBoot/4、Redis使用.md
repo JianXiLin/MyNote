@@ -75,7 +75,7 @@
 - ==spop== key ——随机出栈
 - ==smove== key1 key2 key1中的值 ——将key1中某个值加个key2
 - 数学集合:
-1.差集 sdiff key1 key2 （）
+1.差集 sdiff key1 key2 （在key1中）
 2.交集 sinter
 3.并集 sunion
 
