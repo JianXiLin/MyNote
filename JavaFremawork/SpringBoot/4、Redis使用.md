@@ -48,9 +48,9 @@ k-v，v中也为k-v，
 	- ==hget== region_key key ——获取对应域的值
 	- ==hmget== region_key key[key...]
 	- ==hgetall== region_key ——获取对应域的所有的key、value
-- #### 获取所有的key或者value
-	- ==hkeys== region_key ——获取所有的key
-	- ==hvals== region_key ——获取获取
+- #### （重点）获取所有的key或者value
+	- ==hkeys== region_key ——获取hash中所有的key
+	- ==hvals== region_key ——获取hash中所有的value
 - ==hexists== region_key 
 - ==hdel==、==hlen== region_key
 
