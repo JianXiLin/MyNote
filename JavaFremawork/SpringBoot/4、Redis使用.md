@@ -74,6 +74,10 @@
 - ==srandmember== key 整数数量 ——随机获取set中几个值
 - ==spop== key ——随机出栈
 - ==smove== key1 key2 key1中的值 ——将key1中某个值加个key2
+- 数学集合:
+1.差集 sdiff
+2.交集 sind
+3.
 
 ### 3.5 sorted set （散列表）
 - ==zadd== sset_key score value[score value...] —— 设置值
