@@ -62,6 +62,7 @@
 - ==ltrim== key startIndex endIndex 截取value中某范围的值，重新赋给value 
 - ==rpoplpush== key1 key2 将key1中的尾部元素添加到key2值的0位置。 
 - ==lset== key index value 设置某个位置的值
+- ==linsert== key before/after value newValue 
 
 ### 3.4 set 
 - ==sadd== key value[value...]
