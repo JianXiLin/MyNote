@@ -103,6 +103,7 @@ zset： key scoure1 v1 scoure2 v2...
 - ==zcard== key ——获取数量，scoure与value为一个整体
 - ==zcount== key scoureStart scoureEnd ——获取某Scoure区间的数量
 - ==zrand== key value ——获取下标值
+- ==zRevRand== key value ——
 - ==zscore== key value ——获取对应的scoure值
 -
 
