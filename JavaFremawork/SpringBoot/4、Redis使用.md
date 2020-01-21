@@ -94,7 +94,7 @@ zset： key scoure1 v1 scoure2 v2...
 - ==zadd== key score value[score value...] —— 设置值
 (值唯一，若值存在则修改score)
 - ==zrem== key value ——删除值
-- ==zrange== key start end （withscores）—— 获取片段值（含key）
+- ==zrange(/zrevrange)== key start end （withscores）—— 获取(/逆向)片段值（含key）
 - ==zRemrangeByRank== key startNum endNum ——删除片段（以rank排名）
 - ==zRemrangeByScore== key startScore endScore——删除片段（以Score排名）
   (Score 表示不包含该score
