@@ -96,7 +96,7 @@ zset： key scoure1 v1 scoure2 v2...
 - ==zrem== key value ——删除值
 - ==zrange（/zrevrange）== key start end （withscores）—— 获取(/逆向)片段值（含key）
 - ==zRemrangeByRank== key startNum endNum ——删除片段（以rank排名）
-- ==zRemrangeByScore== key startScore endScore——删除片段（以Score排名）
+- ==zRemrangeByScore（zRev..）== key startScore endScore——删除片段（以Score排名）
   (Score 表示不包含该score
   limit start num 
   withscores
@@ -104,7 +104,6 @@ zset： key scoure1 v1 scoure2 v2...
 - ==zcount== key scoureStart scoureEnd ——获取某Scoure区间的数量
 - ==zrand（/zrevrand）== key value ——获取（/逆向）下标值
 - ==zscore== key value ——获取对应的scoure值
-- ==
 
 ## 4、生存时间（TTL）
 - ==expire== key num ——设置生存时间（秒）
