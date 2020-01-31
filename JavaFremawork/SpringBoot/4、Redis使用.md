@@ -2,6 +2,7 @@
 - window：进入Redis目录，启动Redis，连接Redis。
 - linux：开启Redis服务：redis-server redis.conf文件
 - 连接Redis命令：redis-cli -h 127.0.0.1 -p 6379
+- 退出：shutdown 再exit
 
 测试连接：ping
 ## 2、常用命令
