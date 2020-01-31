@@ -1,7 +1,8 @@
 ## 1、连接Redis
-进入Redis目录，启动Redis，连接Redis。
-开启
-连接Redis命令：redis-cli -h 127.0.0.1 -p 6379
+- window：进入Redis目录，启动Redis，连接Redis。
+- linux：开启Redis服务：redis-server redis.conf文件
+- 连接Redis命令：redis-cli -h 127.0.0.1 -p 6379
+
 测试连接：ping
 ## 2、常用命令
 - keys pattern（？(1)、*(0-~)、[范围始-范围末]、\）
