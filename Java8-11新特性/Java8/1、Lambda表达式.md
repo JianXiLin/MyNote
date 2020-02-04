@@ -9,3 +9,7 @@
 ```java
 Runnable r = （）-> System.out.println("...");
 ```
+#### 2.2、带参
+```java
+Consum
+```
