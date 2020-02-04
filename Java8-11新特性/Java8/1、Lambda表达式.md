@@ -11,5 +11,6 @@ Runnable r = （）-> System.out.println("...");
 ```
 #### 2.2、带参
 ```java
-Consum
+Consumer<String> fun = (args) -> System.out.print("");
 ```
+#### 2.3、带参、返回值
