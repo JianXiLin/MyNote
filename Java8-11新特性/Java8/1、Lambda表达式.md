@@ -11,7 +11,9 @@ Runnable r = （）-> System.out.println("...");
 ```
 #### 2.2、带参
 ```java
-Consumer<String> fun = (args,) -> System.out.print("");
+//仅一个参数时，小括号可省略
+Consumer<String> fun = arg01 -> System.out.print("");
+Consumer<String> fun = (arg01,arg02) -> System.out.print("");
 ```
 #### 2.3、带参、返回值
 ```java
