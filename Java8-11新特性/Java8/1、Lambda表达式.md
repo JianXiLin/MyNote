@@ -17,5 +17,7 @@ Consumer<String> fun = (arg01,arg02) -> System.out.print("");
 ```
 #### 2.3、带参、返回值
 ```java
-Consumer<String> fun = (args) -> System.out.print();
+BinaryOperator<Long> bo = (x，y) -> {
+	System.out.print();
+}
 ```
