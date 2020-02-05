@@ -20,6 +20,7 @@ Consumer<String> fun = (arg01,arg02) -> System.out.print("");
 #### 2.3、带参、返回值
 ```java
 //由于"类型推断"，数据类型可省略
+//单独一个返回值时，return可省略
 BinaryOperator<Long> bo = (x，y) -> {
     System.out.print();
     return x+y;
