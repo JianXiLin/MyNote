@@ -1,4 +1,5 @@
-文件来源于尚硅谷教学
+> ==文件来源于尚硅谷教学(修改)==
+
 # <font color=#689F38>一、Spring Boot 入门</font>
 
 ## <font color=#689F38> 1、Spring Boot 简介</font>
@@ -43,7 +44,7 @@ http://www.gulixueyuan.com/ 谷粒学院
 
 
 
-### 1、MAVEN设置；
+### 1)、MAVEN设置；
 
 给maven 的settings.xml配置文件的profiles标签添加
 
@@ -62,7 +63,7 @@ http://www.gulixueyuan.com/ 谷粒学院
 </profile>
 ```
 
-### 2、IDEA设置
+### 2)、IDEA设置
 
 整合maven进来；
 
@@ -72,7 +73,7 @@ http://www.gulixueyuan.com/ 谷粒学院
 
 ![images/](images/搜狗截图20180129151112.png)
 
-## 4、Spring Boot HelloWorld
+## <font color=#689F38>4、Spring Boot HelloWorld</font>
 
 一个功能：
 
@@ -80,9 +81,9 @@ http://www.gulixueyuan.com/ 谷粒学院
 
 
 
-### 1、创建一个maven工程；（jar）
+### 1)、创建一个maven工程；（jar）
 
-### 2、导入spring boot相关的依赖
+### 2)、导入spring boot相关的依赖
 
 ```xml
     <parent>
@@ -98,7 +99,7 @@ http://www.gulixueyuan.com/ 谷粒学院
     </dependencies>
 ```
 
-### 3、编写一个主程序；启动Spring Boot应用
+### 3)、编写一个主程序；启动Spring Boot应用
 
 ```java
 
@@ -116,7 +117,7 @@ public class HelloWorldMainApplication {
 }
 ```
 
-### 4、编写相关的Controller、Service
+### 4)、编写相关的Controller、Service
 
 ```java
 @Controller
@@ -133,9 +134,9 @@ public class HelloController {
 
 
 
-### 5、运行主程序测试
+### 5)、运行主程序测试
 
-### 6、简化部署
+### 6)、简化部署
 
 ```xml
  <!-- 这个插件，可以将应用打包成一个可执行的jar包；-->
@@ -151,7 +152,7 @@ public class HelloController {
 
 将这个应用打成jar包，直接使用java -jar的命令进行执行；
 
-## 5、Hello World探究
+## <font color=#689F38>5、Hello World探究</font>
 
 ### 1、POM文件
 
@@ -362,7 +363,7 @@ server:
 
 ### 1、基本语法
 
-k:(空格)v：表示一对键值对（空格必须有）；
+==k:(空格)v==：表示一对键值对（空格必须有）；
 
 以**空格**的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的
 
@@ -382,7 +383,7 @@ server:
 
 ​	k: v：字面直接来写；
 
-​		字符串默认不用加上单引号或者双引号；
+​		字符串默认不用加上单引号或者双引号；（==双引号可用转义字符，单引号不行==）
 
 ​		""：双引号；不会转义字符串里面的特殊字符；特殊字符会作为本身想表示的意思
 
@@ -416,7 +417,7 @@ friends: {lastName: zhangsan,age: 18}
 
 #### 数组（List、Set）：
 
-用- 值表示数组中的一个元素
+用==- 值==表示数组中的一个元素
 
 ```yaml
 pets:
@@ -491,21 +492,21 @@ public class Person {
 		</dependency>
 ```
 
-#### 1、properties配置文件在idea中默认utf-8可能会乱码
+#### 1）、properties配置文件在idea中默认utf-8可能会乱码
 
 调整
 
 ![idea配置乱码](images/搜狗截图20180130161620.png)
 
-#### 2、@Value获取值和@ConfigurationProperties获取值比较
+#### 2）、@Value获取值和@ConfigurationProperties获取值比较
 
-|            | @ConfigurationProperties | @Value |
-| ---------- | ------------------------ | ------ |
-| 功能         | 批量注入配置文件中的属性             | 一个个指定  |
-| 松散绑定（松散语法） | 支持                       | 不支持    |
-| SpEL       | 不支持                      | 支持     |
-| JSR303数据校验 | 支持                       | 不支持    |
-| 复杂类型封装     | 支持                       | 不支持    |
+|                                       | @ConfigurationProperties | @Value     |
+| :------------------------------------ | ------------------------ | ---------- |
+| 功能                                  | 批量注入配置文件中的属性 | 一个个指定 |
+| 松散绑定（松散语法）即My-Name =MyName | 支持                     | 不支持     |
+| SpEL                                  | 不支持                   | 支持       |
+| JSR303数据校验                        | 支持                     | 不支持     |
+| 复杂类型封装                          | 支持                     | 不支持     |
 
 配置文件yml还是properties他们都能获取到值；
 
@@ -515,7 +516,7 @@ public class Person {
 
 
 
-#### 3、配置文件注入值数据校验
+#### 3）、配置文件注入值数据校验
 
 ```java
 @Component
@@ -546,7 +547,7 @@ public class Person {
 
 
 
-#### 4、@PropertySource&@ImportResource&@Bean
+#### 4）、@PropertySource&@ImportResource&@Bean
 
 @**PropertySource**：加载指定的配置文件；
 
@@ -613,9 +614,9 @@ Spring Boot里面没有Spring的配置文件，我们自己编写的配置文件
 
 SpringBoot推荐给容器中添加组件的方式；推荐使用全注解的方式
 
-1、配置类**@Configuration**------>Spring配置文件
+A、配置类**@Configuration**------>Spring配置文件
 
-2、使用**@Bean**给容器中添加组件
+B、使用**@Bean**给容器中添加组件
 
 ```java
 /**
@@ -636,9 +637,9 @@ public class MyAppConfig {
 }
 ```
 
-##4、配置文件占位符
+##  4、配置文件占位符
 
-### 1、随机数
+### 1）、随机数
 
 ```java
 ${random.value}、${random.int}、${random.long}
@@ -648,7 +649,7 @@ ${random.int(10)}、${random.int[1024,65536]}
 
 
 
-### 2、占位符获取之前配置的值，如果没有可以是用:指定默认值
+### 2）、占位符获取之前配置的值，如果没有可以是用:指定默认值
 
 ```properties
 person.last-name=张三${random.uuid}
@@ -659,6 +660,7 @@ person.maps.k1=v1
 person.maps.k2=14
 person.lists=a,b,c
 person.dog.name=${person.hello:hello}_dog
+    //若其为${person.hello:hello}为空，则值为${person.hello:hello}
 person.dog.age=15
 ```
 
@@ -821,7 +823,7 @@ java -jar spring-boot-02-config-02-0.0.1-SNAPSHOT.jar --server.port=8087  --serv
 
     ```
 
-    ​
+    
 
 **==将 类路径下  META-INF/spring.factories 里面配置的所有EnableAutoConfiguration的值加入到了容器中；==**
 
@@ -1719,7 +1721,7 @@ Spring Boot 自动配置好了SpringMVC
 
 - Custom `Favicon` support (see below).  favicon.ico
 
-  ​
+  
 
 - 自动注册了 of `Converter`, `GenericConverter`, `Formatter` beans.
 
@@ -1744,7 +1746,7 @@ Spring Boot 自动配置好了SpringMVC
 
     ==自己给容器中添加HttpMessageConverter，只需要将自己的组件注册容器中（@Bean,@Component）==
 
-    ​
+    
 
 - Automatic registration of `MessageCodesResolver` (see below).定义错误代码生成规则
 
