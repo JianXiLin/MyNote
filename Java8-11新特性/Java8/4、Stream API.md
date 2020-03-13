@@ -97,7 +97,18 @@ stream4.forEach(System.out::println);
 ![image.png](https://i.loli.net/2020/02/23/rL7BiIFy6jZnJWM.png)
 
 ```java
-
+	// filter  获取age > 20的员工
+    emps.stream().filter(e -> e.getAge() >20).forEach(System.out::println);
+    System.out.println("-----------------------");
+    // limit  获取前两个age > 20的员工
+    emps.stream().filter(e -> e.getAge() >20).limit(2).forEach(System.out::println);
+    System.out.println("-----------------------");
+    // skip  跳过第一个age > 20的员工,获取后续两个员工
+    emps.stream().filter(e -> e.getAge() >20).skip(1).limit(2).forEach(System.out::println);
+    System.out.println("-----------------------");
+    // distinct 根据hashcode()、equals() 去重
+    emps.stream().distinct().forEach(System.out::println);
+    System.out.println("-----------------------");
 ```
 
 
@@ -106,11 +117,32 @@ stream4.forEach(System.out::println);
 
 ​				 ![image.png](https://i.loli.net/2020/02/23/6fSIO42zleg3Z5q.png)
 
+```java
+	// map 获取仅包含员工工资的Stream
+    emps.stream().map(e->e.getSalary()).forEach(System.out::println);
+  	// 若多个Stream嵌套，需要映射每个值，则可使用flatMap
+```
+
 
 
 #### <font color=#4caf50>3) 排序 </font>
 
 ![image.png](https://i.loli.net/2020/02/23/oRnDWVbjGCvda2L.png)
+
+```java
+/**
+* 测试排序
+*/
+//sorted() 根据工资进行排序
+emps.stream().map(employee -> employee.getSalary()).sorted((e1,e2)>e1.compareTo(e2))
+    .forEach(System.out::println);
+	// 等价
+emps.stream().map(employee -> employee.getSalary()).sorted(Double::compareTo)
+    .forEach(System.out::println);
+
+```
+
+
 
 ### <font color=#4caf50>2.3、终止操作</font>
 
@@ -120,11 +152,45 @@ stream4.forEach(System.out::println);
 
 ![image.png](https://i.loli.net/2020/02/23/fQ9hzb4lNoVILWx.png)
 
+```java
+/**
+* 测试匹配与查询
+*/
+// allMatch() 所有员工工资是否 > 1000
+boolean b = emps.stream().allMatch(employee -> employee.getSalary() > 1000);
+System.out.println("所有员工工资 > 1000："+b);
+// allMatch() 是否至少有一个员工工资 > 1000
+boolean b1 = emps.stream().anyMatch(employee -> employee.getSalary() > 1000);
+System.out.println("是否至少有一个员工工资 > 1000："+b1);
+// allMatch() 是否没有一个员工的工资 > 10000
+boolean b2 = emps.stream().noneMatch(employee -> employee.getSalary() > 10000);
+System.out.println("是否没有一个员工的工资 > 10000："+b2);
+//findFirst() 获取最低工资的员工
+System.out.println("-----------------------");
+Optional<Employee> first;
+	//方法一
+first = emps.stream().sorted((e1,e2)->{
+    return Double.compare(e1.getSalary(),e2.getSalary());
+}).findFirst();
+	//方法二
+first = emps.stream().sorted(Comparator.comparingDouble(Employee::getSalary)).findFirst();
+System.out.println(first);
+```
+
 
 
 #### <font color=#4caf50>2) 规约</font>
 
+即 将Stream中的数值作结合、总处理。例如求其总和。
+
 ![image.png](https://i.loli.net/2020/02/23/fBVGEYD2vwP7Q8F.png)
+
+```java 
+// reduce()  获取所有员工的工资总和
+Optional<Double> reduce = emps.stream().map(employee -> employee.getSalary())
+    .reduce(Double::sum);
+System.out.println(reduce);
+```
 
 
 
@@ -134,6 +200,16 @@ stream4.forEach(System.out::println);
 
 #### <font color=#4caf50>3) 收集</font>
 
+将Stream 转为 Collection 或 Set、List。
+
 ![image.png](https://i.loli.net/2020/02/23/X53iSGPYghVCAEM.png)
 
 ![image.png](https://i.loli.net/2020/02/23/UcHx3KMrJYLqzO2.png)
+
+```java
+// collect 将仅包含工资 >5000的员工信息的Stream 转为List
+List<Employee> list = emps.stream().filter(employee -> employee.getSalary() > 5000)
+    .collect(Collectors.toList());
+System.out.println(list);
+```
+
