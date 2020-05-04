@@ -2,7 +2,7 @@
 # NIO
 
     非阻塞IO操作的API（java1.4）
-    
+
 - NIO中有三个核心组件
     Buffer缓冲区
     Channe通道
@@ -72,7 +72,13 @@ ByteBuffer directByteBuffer=ByteBuffer.allocateDirect(noBytes);
 
 ## 2、Channel通道
 
-### 2.1 介绍图
+### 2.1 作用
+
+实现非阻塞通信。
+SIO中的IO流读取、写入数据是阻塞性的，
+也就是说该线程在读取数据时，将无法进行其它操作，无论IO流中是否有数据。
+
+### 2.2 介绍图
 
 ![2020-03-31-11-46-12](./imgs/网络编程.md/2020-03-31-11-46-12.png)
 
@@ -89,10 +95,12 @@ ByteBuffer directByteBuffer=ByteBuffer.allocateDirect(noBytes);
 
 ## 3、Selector
 
+由于使用Buffer+Channel的方式，实现非阻塞时，单线程处理多个Channel时，需轮询接受到的Channel。将造成以下问题：
+1、
 selector用于管理多个通道，即管理多个线程。
 
 ### 3.1 原理图
 
 ![2020-03-31-22-32-11](./imgs/NIO.md/2020-03-31-22-32-11.png)
 
-### 3.2 
+### 3.2
