@@ -1,0 +1,30 @@
+
+body {
+  // modify your style here
+  // eg: background-color: blue;  
+
+    h1 {
+      text-align: center;
+    }
+    h1, h2{
+      color: #4CAF50;
+    }
+    h3, h4, h5, h6{
+      color: #424242;
+    }
+    a {
+      text-decoration: unset;
+      transition:0.5s; 
+      color: #616161;
+    }
+    a :hover{
+      color: red;
+    }
+    a:focus {
+      outline:none;
+      -moz-outline:none;
+    }
+    a:hover {
+      color: rgba(66, 185, 131, 1);
+    }
+}
