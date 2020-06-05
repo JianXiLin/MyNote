@@ -18,6 +18,7 @@
 ||409||**Conflict** 请求的资源发生冲突，返回请求时，需提供修改建议（eg : 差异比较）|
 |5XX|---|服务端错误|服务端处理请求出错|
 ||500|| **Internal Server Error** 服务器不知如何处理该请求|
+||504|| **Gateway Timeout** 获取数据超时|
 > PUT 与 POST：
 > PUT被定义为idempotent（幂等）方法，而POST则不是
 > 即重复多个请求，PUT的相应结果是一致的，POST则不是。
