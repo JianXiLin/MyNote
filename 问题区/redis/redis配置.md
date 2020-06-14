@@ -66,9 +66,14 @@ redis-server ./6379.conf(配置文件的路径)
 ```cmd
 //开放6379
 firewall-cmd --zone=public --add-port=6379/tcp --permanent
+
 //重启防火墙
 systemctl restart firewalld
-//重启reids
+
+//redis关闭
+redis-cli -h 127.0.0.1 -p 6379 shutdown
+//启动
+
 
 ```
 

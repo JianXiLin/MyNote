@@ -37,7 +37,7 @@ http://www.gulixueyuan.com/ 谷粒学院
 –maven3.x：maven 3.3以上版本；Apache Maven 3.3.9
 
 –IntelliJIDEA2017：IntelliJ IDEA 2017.2.2 x64、STS
-
+"6.0221415E+23"
 –SpringBoot 1.5.9.RELEASE：1.5.9；
 
 统一环境；
