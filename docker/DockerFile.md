@@ -174,7 +174,8 @@ ENV PATH $PATH:$JAVA_HOME/bin;$CATALINA_HOME/lib;$CATLINA_HOME/bin
 
 EXPOSE 8080
 
-CMD /usr/local/apache-tomcat-8.5.56/bin/startup.sh && tail -F /usr/local/apache-tomcat-8.5.56/bin/logs/catalina.out 
+CMD /usr/local/apache-tomcat-8.5.56/bin/startup.sh \
+&& tail -F /usr/local/apache-tomcat-8.5.56/bin/logs/catalina.out 
 
 --------------------------------------End-----------------------------------
 
