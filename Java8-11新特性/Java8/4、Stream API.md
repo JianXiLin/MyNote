@@ -193,11 +193,6 @@ System.out.println(reduce);
 ```
 
 
-
-
-
-
-
 #### <font color=#4caf50>3) 收集</font>
 
 将Stream 转为 Collection 或 Set、List。

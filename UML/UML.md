@@ -11,3 +11,34 @@
 | 聚合      | 整体和部分--部分可单独存在   | ![聚合](https://i.loli.net/2019/10/09/Ld8N1rpJVYqPaWQ.png) | 整体               |
 | 组合      | 整体和部分--部分不能单独存在 | ![组合](https://i.loli.net/2019/10/09/OyrY7EAVeq1Ux4M.png) | 整体赖项           |
 
+```puml
+@startuml
+package UML关系 <<Rectangle>>{
+    a1 ..> b1 :依赖
+    a2 --|> b2 :泛化
+    a3 ..|> b3 :实现
+    a4 -- b4 : 关联
+    a5 --o b5 :组合
+    a6 --* b6 :聚合  
+}
+@enduml
+```
+
+```puml
+@startmindmap
+
+* UML
+** 结构类
+*** 类图
+*** 对象图
+*** 组件图
+*** 配置图
+** 行为类
+*** 用例图
+*** 顺序图
+*** 通信图
+*** 状态图
+*** 活动图
+
+@endmindmap
+```
