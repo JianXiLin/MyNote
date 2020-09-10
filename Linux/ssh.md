@@ -35,4 +35,17 @@ sudo apt-get install ssh
 sudo apt-get install openssh-server
 ```
 
+6.连接服务器
+
+```cmd
+ssh ip地址
+ssh 角色名称@ip地址
+
+参数:
+ -l 角色名称
+ -p 端口号
+ ...
+```
+
+
 [👉其它配置](https://blog.csdn.net/netwalk/article/details/12952051)

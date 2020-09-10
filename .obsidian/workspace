@@ -1,0 +1,80 @@
+{
+  "main": {
+    "id": "02460f6ae649ba53",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d9677b77e7a5b93",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "中间件/数据库/MyCat/总述.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0e06c41a48b3d34",
+    "type": "split",
+    "children": [
+      {
+        "id": "e23b8c11fb6a399b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f01bd92acf630ea8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f389c5b2095f332e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f4c388bd0190f4a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd48db61c9c5cc59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8886b80112f1b2fc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "中间件/数据库/MyCat/总述.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "中间件/数据库/MyCat/总述.md",
+    "大学课程/软件测试/黑盒测试.md"
+  ]
+}
