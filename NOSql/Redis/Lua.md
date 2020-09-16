@@ -141,7 +141,7 @@ redis.call("指令",参数)
 
 #### 4.2.4.案例
 
-##### 通过lua实现 某key的乘法运算
+##### 案例一：通过lua实现 某key的乘法运算
 
 lua脚本：
 
@@ -165,4 +165,76 @@ end
 redis-cli --eval test.lua a , 10
 ```
 
-#####  
+##### 案例二：在Springboot中使用lua脚本
+
+模拟实现的功能: 
+
+在redis中，存储以物品id为key，物品数量为value的String类型值。
+通过Springboot实现以请求接口的方式，来减物品数量。（类似抢购）
+
+###### 1). 编写lua脚本
+
+```lua
+local goodsKeys = KEYS[1]
+local buyNum = ARGV[1]
+
+local goodsNum = redis.call("get",goodsKeys)
+if goodsNum >= buyNum then
+    redis.call("decrby",goodsKeys,buyNum)
+    return buyNum
+else
+    return "0"
+end
+```
+
+###### 2). Service层中引入、使用Lua
+
+通过StringRedisTemplate来执行脚本
+
+```java
+@Service
+public class GoodsServiceImpl implements GoodsService {
+
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
+
+    @Override
+    public long flashSellByLuaScript(String goodsCode, int buyNum) {
+
+        // 指定脚本
+        DefaultRedisScript<String> redisScript = new DefaultRedisScript<>();
+        redisScript.setResultType(String.class);
+        redisScript.setScriptSource(new ResourceScriptSource(new ClassPathResource("flashSell.lua")));
+
+        // 执行脚本
+        String execute = stringRedisTemplate.execute(redisScript,
+                Collections.singletonList(goodsCode),
+                String.valueOf(buyNum));
+        System.out.println(execute);
+
+        return Long.parseLong(execute);
+    }
+}
+```
+
+###### 3). controller层实现接口，调用Service
+
+```java
+
+@RestController
+public class GoodsController {
+
+    @Autowired
+    GoodsService goodsService;
+
+    @GetMapping("/lua/{goodsCode}/{num}")
+    public String lua(@PathVariable("goodsCode") String goodsCode,
+                      @PathVariable("num") Integer num){
+
+        long l = goodsService.flashSellByLuaScript(goodsCode, num);
+
+        return String.valueOf(l);
+    }
+}
+
+```
