@@ -378,6 +378,16 @@ rabbitmq-plugins enable rabbitmq_management
 
 ### 4.4 第二种模型(work quene)
 
+`mynote`
+
+1.默认确认机制（自动确认）：
+
+&emsp;`消费无论快慢，消息都会平分`
+
+2.手动确定机制（以下实现能者多得）：
+
+&emsp;[手动确认（Consumer代码）](#autoAck)
+
 `Work queues`，也被称为（`Task queues`），任务模型。当消息处理比较耗时的时候，可能生产消息的速度会远远大于消息的消费速度。长此以往，消息就会堆积越来越多，无法及时处理。此时就可以使用work 模型：**让多个消费者绑定到一个队列，共同消费队列中的消息**。队列中的消息一旦消费，就会消失，因此任务是不会被重复执行的。
 
 ![image-20200314221002008](./imgs/image-20200314221002008.png)
@@ -440,9 +450,11 @@ channel.basicConsume("hello",true,new DefaultConsumer(channel){
 >
 > But we don't want to lose any tasks. If a worker dies, we'd like the task to be delivered to another worker.
 
+<span id="autoAck"></span>
+
 ```java
 channel.basicQos(1);//一次只接受一条未确认的消息
-//参数2:关闭自动确认消息
+//参数2:关闭自动确认消息（发送者也是需要关闭自动确认）
 channel.basicConsume("hello",false,new DefaultConsumer(channel){
   @Override
   public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
@@ -462,7 +474,7 @@ channel.basicConsume("hello",false,new DefaultConsumer(channel){
 
 ---
 
-### 4.5 第三种模型(fanout) 
+### 4.5 第三种模型(fanout)
 
 `fanout 扇出 也称为广播`
 
@@ -481,6 +493,9 @@ channel.basicConsume("hello",false,new DefaultConsumer(channel){
 
 ```java
 //声明交换机
+//广播 一条消息多个消费者同时消费
+// 参数一： 交换机名称
+// 参数二： 交换机类型
 channel.exchangeDeclare("logs","fanout");//广播 一条消息多个消费者同时消费
 //发布消息
 channel.basicPublish("logs","",null,"hello".getBytes());
@@ -684,6 +699,23 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
 
 ##### 3.开发消费者-2
 
+`mynote`
+
+```markdown
+topic交换机下，routingKey可使用通配符
+词与词使用 `.`拼接（分割）
+`×`号匹配`一个`任意词
+`#`匹配`0-n个`任意词
+```
+
+```java
+// info.user | error.user
+channel.queueBind(queue,"logs_topic","*.user");
+
+// info.user | error.user | user | info.go.user
+channel.queueBind(queue,"logs_topic","#.user");
+```
+
 `Routing Key中使用#通配符方式`
 
 ```java
@@ -710,6 +742,24 @@ channel.basicConsume(queue,true,new DefaultConsumer(channel){
  ![image-20200316114000459](./imgs/image-20200316114000459.png)
 
 ## 5. SpringBoot中使用RabbitMQ
+
+```plantuml
+@startmindmap
+* 注解
+** 类
+*** @RabbitListener
+**** 标记为消费者
+**** @Queue
+***** 声明一个队列，可作为queuesToDeclare的值
+***** 默认为持久化、不自动删除、不独占
+** 方法
+*** @RabbitHandler
+**** 标记为对获取值进行处理的方法
+**** 方法中的第一个String参数为从队列获取的值
+@endmindmap
+
+```
+
 
 ### 5.0 搭建初始环境
 
@@ -954,8 +1004,6 @@ spring:
 
 由此可以看出,引入消息队列后，用户的响应时间就等于写入数据库的时间+写入消息队列的时间(可以忽略不计),引入消息队列后处理后,响应时间是串行的3倍,是并行的2倍。
 
-
-
 ### 6.2 应用解耦
 
 `场景：双11是购物狂节,用户下单后,订单系统需要通知库存系统,传统的做法就是订单系统调用库存系统的接口. `
@@ -1010,78 +1058,147 @@ spring:
 
 2. ##### 集群搭建
 
-   ```markdown
-   # 0.集群规划
-   	node1: 10.15.0.3  mq1  master 主节点
-   	node2: 10.15.0.4  mq2  repl1  副本节点
-   	node3: 10.15.0.5  mq3  repl2  副本节点
-   
-   # 1.克隆三台机器主机名和ip映射
-   	vim /etc/hosts加入:
-   		 10.15.0.3 mq1
-       	10.15.0.4 mq2
-       	10.15.0.5 mq3
-   	node1: vim /etc/hostname 加入:  mq1
-   	node2: vim /etc/hostname 加入:  mq2
-   	node3: vim /etc/hostname 加入:  mq3
-   
-   # 2.三个机器安装rabbitmq,并同步cookie文件,在node1上执行:
-   	scp /var/lib/rabbitmq/.erlang.cookie root@mq2:/var/lib/rabbitmq/
-   	scp /var/lib/rabbitmq/.erlang.cookie root@mq3:/var/lib/rabbitmq/
-   
-   # 3.查看cookie是否一致:
-   	node1: cat /var/lib/rabbitmq/.erlang.cookie 
-   	node2: cat /var/lib/rabbitmq/.erlang.cookie 
-   	node3: cat /var/lib/rabbitmq/.erlang.cookie 
-   
-   # 4.后台启动rabbitmq所有节点执行如下命令,启动成功访问管理界面:
-   	rabbitmq-server -detached 
-   
-   # 5.在node2和node3执行加入集群命令:
-   	1.关闭       rabbitmqctl stop_app
-   	2.加入集群    rabbitmqctl join_cluster rabbit@mq1
-   	3.启动服务    rabbitmqctl start_app
-   
-   # 6.查看集群状态,任意节点执行:
-   	rabbitmqctl cluster_status
-   
-   # 7.如果出现如下显示,集群搭建成功:
-   	Cluster status of node rabbit@mq3 ...
-   	[{nodes,[{disc,[rabbit@mq1,rabbit@mq2,rabbit@mq3]}]},
-   	{running_nodes,[rabbit@mq1,rabbit@mq2,rabbit@mq3]},
-   	{cluster_name,<<"rabbit@mq1">>},
-   	{partitions,[]},
-   	{alarms,[{rabbit@mq1,[]},{rabbit@mq2,[]},{rabbit@mq3,[]}]}]
-   
-   # 8.登录管理界面,展示如下状态:
-   ```
+```markdown
+# 0.集群规划
+node1: 10.15.0.3  mq1  master 主节点
+node2: 10.15.0.4  mq2  repl1  副本节点
+node3: 10.15.0.5  mq3  repl2  副本节点
 
-   ![image-20200320095613586](./imgs/image-20200320095613586.png)
+# 1.克隆三台机器主机名和ip映射
+vim /etc/hosts加入:
+        10.15.0.3 mq1
+    10.15.0.4 mq2
+    10.15.0.5 mq3
+node1: vim /etc/hostname 加入:  mq1
+node2: vim /etc/hostname 加入:  mq2
+node3: vim /etc/hostname 加入:  mq3
 
-   ```markdown
-   # 9.测试集群在node1上,创建队列
-   ```
+# 2.三个机器安装rabbitmq,并同步cookie文件,在node1上执行:
+scp /var/lib/rabbitmq/.erlang.cookie root@mq2:/var/lib/rabbitmq/
+scp /var/lib/rabbitmq/.erlang.cookie r oot@mq3:/var/lib/rabbitmq/
 
-   ![image-20200320095743935](./imgs/image-20200320095743935.png)
+# 3.查看cookie是否一致:
+node1: cat /var/lib/rabbitmq/.erlang.cookie 
+node2: cat /var/lib/rabbitmq/.erlang.cookie 
+node3: cat /var/lib/rabbitmq/.erlang.cookie 
 
-   ```markdown
-   # 10.查看node2和node3节点:
-   ```
+# 4.后台启动rabbitmq所有节点执行如下命令,启动成功访问管理界面:
+rabbitmq-server -detached 
 
-   ![image-20200320095827688](./imgs/image-20200320095827688.png)
+# 5.在node2和node3执行加入集群命令:
+1.关闭       rabbitmqctl stop_app
+2.加入集群    rabbitmqctl join_cluster rabbit@mq1
+3.启动服务    rabbitmqctl start_app
 
-   ![image-20200320095843370](./imgs/image-20200320095843370.png)
+# 6.查看集群状态,任意节点执行:
+rabbitmqctl cluster_status
 
-   ```markdown
-   # 11.关闭node1节点,执行如下命令,查看node2和node3:
-   	rabbitmqctl stop_app
-   ```
+# 7.如果出现如下显示,集群搭建成功:
+Cluster status of node rabbit@mq3 ...
+[{nodes,[{disc,[rabbit@mq1,rabbit@mq2,rabbit@mq3]}]},
+{running_nodes,[rabbit@mq1,rabbit@mq2,rabbit@mq3]},
+{cluster_name,<<"rabbit@mq1">>},
+{partitions,[]},
+{alarms,[{rabbit@mq1,[]},{rabbit@mq2,[]},{rabbit@mq3,[]}]}]
 
-   ![image-20200320100000347](./imgs/image-20200320100000347.png)
+# 8.登录管理界面,展示如下状态:
+```
 
-   ![image-20200320100010968](./imgs/image-20200320100010968.png)
+![image-20200320095613586](./imgs/image-20200320095613586.png)
 
-   ---
+```markdown
+# 9.测试集群在node1上,创建队列
+```
+
+![image-20200320095743935](./imgs/image-20200320095743935.png)
+
+```markdown
+# 10.查看node2和node3节点:
+```
+
+![image-20200320095827688](./imgs/image-20200320095827688.png)
+
+![image-20200320095843370](./imgs/image-20200320095843370.png)
+
+```markdown
+# 11.关闭node1节点,执行如下命令,查看node2和node3:
+rabbitmqctl stop_app
+```
+
+![image-20200320100000347](./imgs/image-20200320100000347.png)
+
+![image-20200320100010968](./imgs/image-20200320100010968.png)
+
+---
+
+
+#### 在docker下搭建RabbitMQ简单集群
+
+##### 1. 创建Rabbit
+
+```markdown
+
+## Master
+
+    docker run -d --hostname rabbit_m \
+        -p 1883:1883 -p 4369:4369 -p 5671:5671 -p 5672:5672 \
+        -p 15672:15672 -p 25672:25672 -p 61613:61613 -p 61614:61614 \
+        -v ~/data/rabbitmq/etc:/etc/rabbitmq \
+        -v ~/data/rabbitmq/lib:/var/lib/rabbitmq \
+        -v ~/data/rabbitmq/log:/var/log/rabbitmq \
+        --name rabbitmq rabbitmq:3.8.8
+
+## Slave1
+
+    docker run -d --hostname rabbit_s1 \
+        -p 15673:15672 -p 5673:5672 \
+        -e RABBITMQ_ERLANG_COOKIE='rabbitcookie' \
+        --link rabbitmq:rabbit_m \
+        --name rabbitmq_s1 rabbitmq:3.8.8
+
+RABBITMQ_ERLANG_COOKIE值需要与Master一致，
+其值位于/var/lib/rabbitmq/.erlang.cookie
+
+## Slave2
+
+    docker run -d --hostname rabbit_s2 \
+        -p 15674:15672 -p 5674:5672 \
+        -e RABBITMQ_ERLANG_COOKIE='rabbitcookie' \
+        --link rabbitmq:rabbit_m \
+        --link rabbitmq_s1:rabbit_s1 \
+        --name rabbitmq_s2 rabbitmq:3.8.8
+```
+
+##### 2. 部署集群
+
+进入docker容器，设置集群
+
+```markdown
+## Master(可选)--问题：若执行管理界面将与Selver一致，原因未知。
+rabbitmqctl stop_app
+rabbitmqctl reset
+rabbitmqctl start_app
+
+## Slave
+rabbitmqctl stop_app
+rabbitmqctl reset
+rabbitmqctl join_cluster --ram rabbit@rabbit_m
+rabbitmqctl start_app
+```
+
+参数“--ram”表示设置为内存节点，忽略次参数默认为磁盘节点。
+
+##### 3. 查看集群状态
+
+```bash
+rabbitmqctl cluster_status
+```
+
+##### 4.进入docker，开启管理页面
+
+```bash
+rabbitmq-plugins enable rabbitmq_management
+```
 
 #### 7.1.2 镜像集群
 
@@ -1132,4 +1249,3 @@ spring:
 
    ----
 
-   
