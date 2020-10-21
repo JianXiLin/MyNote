@@ -3,7 +3,7 @@
 
 ### 问题描述
 
-在SpringSecurity中的HttpSecurity配置了登录页面请求为`/login`,登录post请求为`/doLogin`,但当发送/doLogin的post请求却跳转到/login请求。
+在SpringSecurity中的HttpSecurity配置了登录页面请求为`/login`,登录的post请求为`/doLogin`,但当发送/doLogin的post请求却跳转到/login请求。
 
 HttpSecurity:
 ```java
