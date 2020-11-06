@@ -14,12 +14,11 @@ Optional 是一个可以为null的对象。
 
 - 当明确 t不为空时，可使用：
 
-  ​	Optional.of (T t) 
-
-  ​	get ()
+  ​Optional.of (T t)
+  ​get ()
 
 - 当不明确 t 是否为空时，可使用以下方法：
 
-  ​	Optional.ofNullable( T t )
-
-  ​	orElse ( T other )
+  Optional.ofNullable( T t )
+  orElse ( T other )
+  
