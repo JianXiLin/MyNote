@@ -41,3 +41,34 @@ fuser -m -v -k /dev/sda10
 <b type="h">4. 查看/etc/fstab</b>
 
 检查自动挂载配置文件,查看`/etc/fstab`文件中/opt的uuid是否与分区助手中`/opt的uuid`一致.
+
+<b type="h" >5. 修改网易云字体大小</b>
+
+修改 /opt/netease/netease-cloud-music/netease-cloud-music.bash内容
+
+（在最后一行中添加--force-device-scale-factor=1.6）
+
+```bash
+#!/bin/sh
+HERE="$(dirname "$(readlink -f "${0}")")"
+export LD_LIBRARY_PATH="${HERE}"/libs
+export QT_PLUGIN_PATH="${HERE}"/plugins 
+export QT_QPA_PLATFORM_PLUGIN_PATH="${HERE}"/plugins/platforms
+exec "${HERE}"/netease-cloud-music --force-device-scale-factor=1.2 $@
+```
+
+<b type="h">6. 修改微信字体大小</b>
+
+```bash
+env WINEPREFIX="$HOME/.deepinwine/Deepin-WeChat" winecfg
+```
+
+<b type="h">7. 搜狗输入法</b>
+
+- 隐藏搜狗浮窗
+
+修改文件`~/.config/sogoupinyin/conf/env.ini`中的`StatusAppearance`为`0`。
+
+```bash
+StatusAppearance=0
+```
