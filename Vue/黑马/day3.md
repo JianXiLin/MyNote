@@ -28,7 +28,7 @@ Vue.component('register', {
 同时，需要使用 Vue.component 来定义组件：
 ```
 Vue.component('account', {
-      template: '#tmpl'
+      template: '[[tmpl]]'
     });
 ```
 
@@ -38,7 +38,7 @@ Vue.component('account', {
 1. 在组件中，`data`需要被定义为一个方法，例如：
 ```
 Vue.component('account', {
-      template: '#tmpl',
+      template: '[[tmpl]]',
       data() {
         return {
           msg: '大家好！'
@@ -62,7 +62,7 @@ Vue.component('account', {
 <script>
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {},
       methods: {},
       components: { // 定义子组件
@@ -107,7 +107,7 @@ Vue.component('account', {
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {
         flag: true
       },
@@ -137,7 +137,7 @@ Vue.component('account', {
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: { comName: 'login' },
       methods: {}
     });
@@ -180,7 +180,7 @@ Vue.component('account', {
 <script>
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {
         msg: '这是父组件中的消息'
       },
@@ -223,7 +223,7 @@ Vue.component('account', {
   <script>
     // 子组件的定义方式
     Vue.component('son', {
-      template: '#son', // 组件模板Id
+      template: '[[son]]', // 组件模板Id
       methods: {
         sendMsg() { // 按钮的点击事件
           this.$emit('func', 'OK'); // 调用父组件传递过来的方法，同时把数据传递出去
@@ -233,7 +233,7 @@ Vue.component('account', {
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {},
       methods: {
         getMsg(val){ // 子组件中，通过 this.$emit() 实际调用的方法，在此进行定义
@@ -273,7 +273,7 @@ Vue.component('account', {
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {},
       methods: {
         getElement() {
@@ -337,7 +337,7 @@ Vue.component('account', {
 ```
 // 6. 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       router: router // 使用 router 属性来使用路由规则
     });
 ```
@@ -404,7 +404,7 @@ var register = Vue.extend({
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {},
       methods: {},
       components: {
@@ -456,7 +456,7 @@ var register = Vue.extend({
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {},
       methods: {},
       router
@@ -500,7 +500,7 @@ var register = Vue.extend({
   <script>
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {
         firstName: 'jack',
         lastName: 'chen',
@@ -545,7 +545,7 @@ var register = Vue.extend({
 
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {},
       methods: {},
       router: router,
@@ -572,7 +572,7 @@ var register = Vue.extend({
   <script>
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {
         firstName: 'jack',
         lastName: 'chen'
@@ -600,7 +600,7 @@ var register = Vue.extend({
   <script>
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {
         firstName: 'jack',
         lastName: 'chen'

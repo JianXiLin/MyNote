@@ -1,8 +1,8 @@
 > ==文件来源于尚硅谷教学(修改)==
 
-# <font color=#689F38>一、Spring Boot 入门</font>
+# <font color=[[689F38]]>一、Spring Boot 入门</font>
 
-## <font color=#689F38> 1、Spring Boot 简介</font>
+## <font color=[[689F38]]> 1、Spring Boot 简介</font>
 
 > 简化Spring应用开发的一个框架；
 >
@@ -10,7 +10,7 @@
 >
 > J2EE开发的一站式解决方案；
 
-## <font color=#689F38>2、微服务</font>
+## <font color=[[689F38]]>2、微服务</font>
 
 2014，martin fowler
 
@@ -26,7 +26,7 @@
 
 
 
-## <font color=#689F38> 3、环境准备 </font>
+## <font color=[[689F38]]> 3、环境准备 </font>
 
 http://www.gulixueyuan.com/ 谷粒学院
 
@@ -73,7 +73,7 @@ http://www.gulixueyuan.com/ 谷粒学院
 
 ![images/](images/搜狗截图20180129151112.png)
 
-## <font color=#689F38>4、Spring Boot HelloWorld</font>
+## <font color=[[689F38]]>4、Spring Boot HelloWorld</font>
 
 一个功能：
 
@@ -152,7 +152,7 @@ public class HelloController {
 
 将这个应用打成jar包，直接使用java -jar的命令进行执行；
 
-## <font color=#689F38>5、Hello World探究</font>
+## <font color=[[689F38]]>5、Hello World探究</font>
 
 ### 1、POM文件
 
@@ -793,13 +793,13 @@ java -jar spring-boot-02-config-02-0.0.1-SNAPSHOT.jar --server.port=8087  --serv
 
 所有支持的配置加载来源；
 
-[参考官方文档](https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/#boot-features-external-config)
+[参考官方文档](https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/[[boot-features-external-config]])
 
 ## 8、自动配置原理
 
 配置文件到底能写什么？怎么写？自动配置原理；
 
-[配置文件能配置的属性参照](https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/#common-application-properties)
+[配置文件能配置的属性参照](https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/[[common-application-properties]])
 
 
 
@@ -1264,10 +1264,10 @@ SpringBoot修改日志的默认配置
 logging.level.com.atguigu=trace
 
 
-#logging.path=
+[[logging]].path=
 # 不指定路径在当前项目下生成springboot.log日志
 # 可以指定完整的路径；
-#logging.file=G:/springboot.log
+[[logging]].file=G:/springboot.log
 
 # 在当前磁盘的根路径下创建spring文件夹和里面的log文件夹；使用 spring.log 作为默认文件
 logging.path=/spring/log
@@ -1635,32 +1635,32 @@ Simple expressions:（表达式语法）
     Variable Expressions: ${...}：获取变量值；OGNL；
     		1）、获取对象的属性、调用方法
     		2）、使用内置的基本对象：
-    			#ctx : the context object.
-    			#vars: the context variables.
-                #locale : the context locale.
-                #request : (only in Web Contexts) the HttpServletRequest object.
-                #response : (only in Web Contexts) the HttpServletResponse object.
-                #session : (only in Web Contexts) the HttpSession object.
-                #servletContext : (only in Web Contexts) the ServletContext object.
+    			[[ctx]] : the context object.
+    			[[vars]]: the context variables.
+                [[locale]] : the context locale.
+                [[request]] : (only in Web Contexts) the HttpServletRequest object.
+                [[response]] : (only in Web Contexts) the HttpServletResponse object.
+                [[session]] : (only in Web Contexts) the HttpSession object.
+                [[servletContext]] : (only in Web Contexts) the ServletContext object.
                 
                 ${session.foo}
             3）、内置的一些工具对象：
-#execInfo : information about the template being processed.
-#messages : methods for obtaining externalized messages inside variables expressions, in the same way as they would be obtained using #{…} syntax.
-#uris : methods for escaping parts of URLs/URIs
-#conversions : methods for executing the configured conversion service (if any).
-#dates : methods for java.util.Date objects: formatting, component extraction, etc.
-#calendars : analogous to #dates , but for java.util.Calendar objects.
-#numbers : methods for formatting numeric objects.
-#strings : methods for String objects: contains, startsWith, prepending/appending, etc.
-#objects : methods for objects in general.
-#bools : methods for boolean evaluation.
-#arrays : methods for arrays.
-#lists : methods for lists.
-#sets : methods for sets.
-#maps : methods for maps.
-#aggregates : methods for creating aggregates on arrays or collections.
-#ids : methods for dealing with id attributes that might be repeated (for example, as a result of an iteration).
+[[execInfo]] : information about the template being processed.
+[[messages]] : methods for obtaining externalized messages inside variables expressions, in the same way as they would be obtained using #{…} syntax.
+[[uris]] : methods for escaping parts of URLs/URIs
+[[conversions]] : methods for executing the configured conversion service (if any).
+[[dates]] : methods for java.util.Date objects: formatting, component extraction, etc.
+[[calendars]] : analogous to [[dates]] , but for java.util.Calendar objects.
+[[numbers]] : methods for formatting numeric objects.
+[[strings]] : methods for String objects: contains, startsWith, prepending/appending, etc.
+[[objects]] : methods for objects in general.
+[[bools]] : methods for boolean evaluation.
+[[arrays]] : methods for arrays.
+[[lists]] : methods for lists.
+[[sets]] : methods for sets.
+[[maps]] : methods for maps.
+[[aggregates]] : methods for creating aggregates on arrays or collections.
+[[ids]] : methods for dealing with id attributes that might be repeated (for example, as a result of an iteration).
 
     Selection Variable Expressions: *{...}：选择表达式：和${}在功能上是一样；
     	补充：配合 th:object="${session.user}：
@@ -1704,7 +1704,7 @@ Special tokens:
 
 ## 4、SpringMVC自动配置
 
-https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications
+https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/[[boot-features-developing-web-applications]]
 
 ### 1. Spring MVC auto-configuration
 
@@ -2109,7 +2109,7 @@ spring.thymeleaf.cache=false
 登陆错误消息的显示
 
 ```html
-<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+<p style="color: red" th:text="${msg}" th:if="${not [[strings]].isEmpty(msg)}"></p>
 ```
 
 
@@ -2291,7 +2291,7 @@ insert的公共片段在div标签中
             </li>
 
 <!--引入侧边栏;传入参数-->
-<div th:replace="commons/bar::#sidebar(activeUri='emps')"></div>
+<div th:replace="commons/bar::[[sidebar]](activeUri='emps')"></div>
 ```
 
 ### 6）、CRUD-员工添加
@@ -2390,7 +2390,7 @@ insert的公共片段在div标签中
     </div>
     <div class="form-group">
         <label>Birth</label>
-        <input name="birth" type="text" class="form-control" placeholder="zhangsan" th:value="${emp!=null}?${#dates.format(emp.birth, 'yyyy-MM-dd HH:mm')}">
+        <input name="birth" type="text" class="form-control" placeholder="zhangsan" th:value="${emp!=null}?${[[dates]].format(emp.birth, 'yyyy-MM-dd HH:mm')}">
     </div>
     <button type="submit" class="btn btn-primary" th:text="${emp!=null}?'修改':'添加'">添加</button>
 </form>
@@ -2405,7 +2405,7 @@ insert的公共片段在div标签中
     <td th:text="${emp.email}"></td>
     <td th:text="${emp.gender}==0?'女':'男'"></td>
     <td th:text="${emp.department.departmentName}"></td>
-    <td th:text="${#dates.format(emp.birth, 'yyyy-MM-dd HH:mm')}"></td>
+    <td th:text="${[[dates]].format(emp.birth, 'yyyy-MM-dd HH:mm')}"></td>
     <td>
         <a class="btn btn-sm btn-primary" th:href="@{/emp/}+${emp.id}">编辑</a>
         <button th:attr="del_uri=@{/emp/}+${emp.id}" class="btn btn-sm btn-danger deleteBtn">删除</button>
@@ -2416,7 +2416,7 @@ insert的公共片段在div标签中
 <script>
     $(".deleteBtn").click(function(){
         //删除当前员工的
-        $("#deleteEmpForm").attr("action",$(this).attr("del_uri")).submit();
+        $("[[deleteEmpForm]]").attr("action",$(this).attr("del_uri")).submit();
         return false;
     });
 </script>
@@ -3007,7 +3007,7 @@ ServerProperties也是定制器
 
 
 
-###5）、嵌入式Servlet容器启动原理；
+##[[5）、嵌入式Servlet]]容器启动原理；
 
 什么时候创建嵌入式的Servlet容器工厂？什么时候获取嵌入式的Servlet容器并启动Tomcat；
 

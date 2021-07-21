@@ -3,13 +3,13 @@
 ## 开启Apache的gzip压缩
 要让apache支持gzip功能，要用到deflate_Module和headers_Module。打开apache的配置文件httpd.conf，大约在105行左右，找到以下两行内容：（这两行不是连续在一起的）
 ```
-#LoadModule deflate_module modules/mod_deflate.so
-#LoadModule headers_module modules/mod_headers.so
+[[LoadModule]] deflate_module modules/mod_deflate.so
+[[LoadModule]] headers_module modules/mod_headers.so
 ```
 然后将其前面的“#”注释删掉，表示开启gzip压缩功能。开启以后还需要进行相关配置。在httpd.conf文件的最后添加以下内容即可：
 ```
 <IfModule deflate_module>
-    #必须的，就像一个开关一样，告诉apache对传输到浏览器的内容进行压缩
+    [[必须的，就像一个开关一样，告诉apache]]对传输到浏览器的内容进行压缩
     SetOutputFilter DEFLATE
     DeflateCompressionLevel 9
 </IfModule>

@@ -133,7 +133,7 @@
 
     var vm = new Vue({
 
-      el: '#app',
+      el: '[[app]]',
 
       data: {
 
@@ -253,7 +253,7 @@
 
     var vm = new Vue({
 
-      el: '#app',
+      el: '[[app]]',
 
       data: {
 
@@ -457,7 +457,7 @@ v-show– display:none
 
 1. 1.x 版本中的filterBy指令，在2.x中已经被废除：
 
-[filterBy - 指令](https://v1-cn.vuejs.org/api/#filterBy)
+[filterBy - 指令](https://v1-cn.vuejs.org/api/[[filterBy]])
 
 ```
 

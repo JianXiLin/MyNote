@@ -1,0 +1,114 @@
+{
+  "main": {
+    "id": "616962eb4bb196b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "d959efb249a5b923",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0264ec8e01f931fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a48eecfbdf54838",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21f34a0fbffa9ec7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "43f3c324c94da100",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c949bcda91905ff4",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a8469bde39bc3aff",
+    "type": "split",
+    "children": [
+      {
+        "id": "a20b476847a8ef84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e75b9f6d8b7e2685",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0b763a7ffe7e8b6d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d959efb249a5b923",
+  "lastOpenFiles": [
+    "接口/接口幂等性设计.md",
+    "接口/接口.md",
+    "接口.md",
+    "接口/_about_.md",
+    "接口幂等性设计.md",
+    "未命名/a.md",
+    "未命名/未命名.md",
+    "未命名.md",
+    "Day Planners/Day Planner-20210712.md"
+  ]
+}

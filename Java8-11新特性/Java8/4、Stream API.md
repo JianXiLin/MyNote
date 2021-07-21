@@ -1,18 +1,18 @@
-# <font color=#4caf50>Stream API </font>
+# <font color=[[4caf50]]>Stream API </font>
+[[Java8]]
+## <font color=[[4caf50]]>1、简介</font>
 
-## <font color=#4caf50>1、简介</font>
-
-### <font color=#4caf50>1.1、作用 </font>
+### <font color=[[4caf50]]>1.1、作用 </font>
 
 Stream 可对集合进行操作，例如查询、过滤、映射等。
 
-### <font color=#4caf50> 1.2、Stream 与 Collection的区别：</font>
+### <font color=[[4caf50]]> 1.2、Stream 与 Collection的区别：</font>
 
 ​		Stream是对集合内容进行操作、计算，不存储数据。
 
 ​		Collection是对集合内容进行存储。
 
-### <font color=#4caf50> 1.3、Stream 的特点：</font>
+### <font color=[[4caf50]]> 1.3、Stream 的特点：</font>
 
  A、==不存储==集合的数据。
 
@@ -26,13 +26,13 @@ Stream 可对集合进行操作，例如查询、过滤、映射等。
 
 
 
-## <font color=#4caf50>2、操作步骤 </font>
+## <font color=[[4caf50]]>2、操作步骤 </font>
 
 创建  - > 中间操作 - > 终止
 
-### <font color=#4caf50>2.1、创建Stream</font>
+### <font color=[[4caf50]]>2.1、创建Stream</font>
 
-#### <font color=#4caf50> 1）通过Collection 获取。==（已存在集合）==</font>
+#### <font color=[[4caf50]]> 1）通过Collection 获取。==（已存在集合）==</font>
 
 ​	Collection 中的方法：
 
@@ -40,15 +40,15 @@ Stream 可对集合进行操作，例如查询、过滤、映射等。
 
 ​		parallelStream() —— 获取一个并行流
 
-#### <font color=#4caf50> 2）通过Array 获取。==（数组）== </font>
+#### <font color=[[4caf50]]> 2）通过Array 获取。==（数组）== </font>
 
 ​	Array.stream( 数组 )  
 
-#### <font color=#4caf50> 3）使用Stream的静态方法 of（）。==(value…)== </font>
+#### <font color=[[4caf50]]> 3）使用Stream的静态方法 of（）。==(value…)== </font>
 
 ​	Stream.of ( value… )
 
-#### <font color=#4caf50> 4) 创建==无限流==  </font>
+#### <font color=[[4caf50]]> 4) 创建==无限流==  </font>
 
 ​		Stream.iterate     —— 迭代
 
@@ -90,9 +90,9 @@ Stream<Double> stream4 = Stream.generate(Math::random).limit(2);
 stream4.forEach(System.out::println);
 ```
 
-### <font color=#4caf50>2.2、中间操作 </font>
+### <font color=[[4caf50]]>2.2、中间操作 </font>
 
-#### <font color=#4caf50>1) 筛选与切片 </font>
+#### <font color=[[4caf50]]>1) 筛选与切片 </font>
 
 ![image.png](https://i.loli.net/2020/02/23/rL7BiIFy6jZnJWM.png)
 
@@ -113,7 +113,7 @@ stream4.forEach(System.out::println);
 
 
 
-#### <font color=#4caf50>2) 映射 </font>
+#### <font color=[[4caf50]]>2) 映射 </font>
 
 ​				 ![image.png](https://i.loli.net/2020/02/23/6fSIO42zleg3Z5q.png)
 
@@ -125,7 +125,7 @@ stream4.forEach(System.out::println);
 
 
 
-#### <font color=#4caf50>3) 排序 </font>
+#### <font color=[[4caf50]]>3) 排序 </font>
 
 ![image.png](https://i.loli.net/2020/02/23/oRnDWVbjGCvda2L.png)
 
@@ -144,9 +144,9 @@ emps.stream().map(employee -> employee.getSalary()).sorted(Double::compareTo)
 
 
 
-### <font color=#4caf50>2.3、终止操作</font>
+### <font color=[[4caf50]]>2.3、终止操作</font>
 
-#### <font color=#4caf50>1) 匹配与查找</font>
+#### <font color=[[4caf50]]>1) 匹配与查找</font>
 
 ![image.png](https://i.loli.net/2020/02/23/QBpXJuSWi8ebz4Z.png)
 
@@ -179,7 +179,7 @@ System.out.println(first);
 
 
 
-#### <font color=#4caf50>2) 规约</font>
+#### <font color=[[4caf50]]>2) 规约</font>
 
 即 将Stream中的数值作结合、总处理。例如求其总和。
 
@@ -193,7 +193,7 @@ System.out.println(reduce);
 ```
 
 
-#### <font color=#4caf50>3) 收集</font>
+#### <font color=[[4caf50]]>3) 收集</font>
 
 将Stream 转为 Collection 或 Set、List。
 

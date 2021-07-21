@@ -32,9 +32,9 @@ linux与docker容器网络在同一个网段
 
 案例:
 ```shell
-ip netns list               #查看namespaces
-ip netns add test1          #添加名为test1的namespaces
-ip netns delete test1       #删除名为test1的namespaces
+ip netns list               [[查看namespaces]]
+ip netns add test1          [[添加名为test1的namespaces]]
+ip netns delete test1       [[删除名为test1的namespaces]]
 ```
 
 🔹<b>ip link</b>

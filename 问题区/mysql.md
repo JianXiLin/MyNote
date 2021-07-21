@@ -54,38 +54,38 @@ appication.properties文件中数据库配置内容解释
 ```
 #初始化数据库的时候，如果错误，是否继续启动。
 spring.datasource.continue-on-error=false
-#jdbc driver.默认通过uri来自动检测。
+[[jdbc]] driver.默认通过uri来自动检测。
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
-#使用的db名称
+[[使用的db]]名称
 spring.datasource.name=test
-#是否随机生成db名称
+[[是否随机生成db]]名称
 spring.datasource.generate-unique-name=false
-#jdbc url.连接数据库的uri
+[[jdbc]] url.连接数据库的uri
 spring.datasource.url=
 #数据库连接用户名
 spring.datasource.username=
 #数据连接密码
 spring.datasource.password=
-#DML的用户名(如果数据库专门设置了对应的用户名和密码)
+[[DML]]的用户名(如果数据库专门设置了对应的用户名和密码)
 spring.datasource.data-username=
-#DML的密码(如果数据库专门设置了对应的用户名和密码)
+[[DML]]的密码(如果数据库专门设置了对应的用户名和密码)
 spring.datasource.data-password=
-#DDL的用户名(如果数据库专门设置了对应的用户名和密码)
+[[DDL]]的用户名(如果数据库专门设置了对应的用户名和密码)
 spring.datasource.schema-username=
-#DDL的密码(如果数据库专门设置了对应的用户名和密码)
+[[DDL]]的密码(如果数据库专门设置了对应的用户名和密码)
 spring.datasource.schema-password=
-#全限定名，连接池。默认自动检测classpath
+[[全限定名，连接池。默认自动检测classpath]]
 spring.datasource.type=com.zaxxer.hikari.HikariDataSource
-#sql脚本字符
+[[sql]]脚本字符
 spring.datasource.sql-script-encoding=UTF-8
-#sql脚本分割符，默认为分号。
+[[sql]]脚本分割符，默认为分号。
 spring.datasource.separator=;
 
-#dbcp2的连接参数
+[[dbcp2]]的连接参数
 spring.datasource.dbcp2.*
-#hikari的连接参数
+[[hikari]]的连接参数
 spring.datasource.hikari.*
-#tomcat的连接参数
+[[tomcat]]的连接参数
 spring.datasource.tomcat.*
 ```
 

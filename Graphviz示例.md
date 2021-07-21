@@ -41,10 +41,10 @@ digraph demo {
     mother[label="妈妈", shape="box"]
     brother[label="哥哥", shape="circle"]
     sister[label="姐姐", shape="circle"]
-    node[color="#FF6347"]
+    node[color="[[FF6347]]"]
     strangers[label="路人"]
 
-    edge[color="#FF6347"]
+    edge[color="[[FF6347]]"]
 
     father->mother[label="夫妻", dir="both"]
     father->brother[label="父子"]

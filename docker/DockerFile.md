@@ -188,7 +188,7 @@ docker run -d -p 9090:8080 --name xitomcat \
 -v /home/docker_demo_volume/tomcat/logs:/usr/local/apache-tomcat-8.5.56/logs \
 mytomcat:1.0
 
-# 4. 测试,访问地址ip:9090  #显示tomcat页面
+# 4. 测试,访问地址ip:9090  [[显示tomcat]]页面
 
 # 5. 在主机被挂载的目录上添加web.xml和index.jsp.
 #    测试挂载目录是否有效
@@ -223,7 +223,7 @@ vim index.jsp
 -------------------------------End---------------------------
 ---
 
-# 6. 测试,访问地址ip:9090/test  #显示Hello!
+# 6. 测试,访问地址ip:9090/test  [[显示Hello]]!
 
 ```
 

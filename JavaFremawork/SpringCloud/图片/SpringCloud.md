@@ -3981,11 +3981,11 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
         transport {
           # tcp udt unix-domain-socket
           type = "TCP"
-          #NIO NATIVE
+          [[NIO]] NATIVE
           server = "NIO"
-          #enable heartbeat
+          [[enable]] heartbeat
           heartbeat = true
-          #thread factory for netty
+          [[thread]] factory for netty
           thread-factory {
             boss-thread-prefix = "NettyBoss"
             worker-thread-prefix = "NettyServerNIOWorker"
@@ -3996,7 +3996,7 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
             client-worker-thread-prefix = "NettyClientWorkerThread"
             # netty boss thread size,will not be used for UDT
             boss-thread-size = 1
-            #auto default pin or 8
+            [[auto]] default pin or 8
             worker-thread-size = 8
           }
           shutdown {
@@ -4007,16 +4007,16 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
           compressor = "none"
         }
         service {
-          #vgroup->rgroup
+          [[vgroup]]->rgroup
           # 事务组名称
           vgroup_mapping.fsp_tx_group = "default"
-          #only support single node
+          [[only]] support single node
           default.grouplist = "127.0.0.1:8091"
-          #degrade current not support
+          [[degrade]] current not support
           enableDegrade = false
-          #disable
+          [[disable]]
           disable = false
-          #unit ms,s,m,h,d represents milliseconds, seconds, minutes, hours, days, default permanent
+          [[unit]] ms,s,m,h,d represents milliseconds, seconds, minutes, hours, days, default permanent
           max.commit.retry.timeout = "-1"
           max.rollback.retry.timeout = "-1"
         }
@@ -4035,7 +4035,7 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
         ## transaction log store
         store {
           ## store mode: file、db
-          #mode = "file"
+          [[mode]] = "file"
           mode = "db"
          
           ## file store
@@ -4085,13 +4085,13 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
           }
         }
         recovery {
-          #schedule committing retry period in milliseconds
+          [[schedule]] committing retry period in milliseconds
           committing-retry-period = 1000
-          #schedule asyn committing retry period in milliseconds
+          [[schedule]] asyn committing retry period in milliseconds
           asyn-committing-retry-period = 1000
-          #schedule rollbacking retry period in milliseconds
+          [[schedule]] rollbacking retry period in milliseconds
           rollbacking-retry-period = 1000
-          #schedule timeout retry period in milliseconds
+          [[schedule]] timeout retry period in milliseconds
           timeout-retry-period = 1000
         }
          
@@ -4099,7 +4099,7 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
           undo.data.validation = true
           undo.log.serialization = "jackson"
           undo.log.save.days = 7
-          #schedule delete expired undo_log in milliseconds
+          [[schedule]] delete expired undo_log in milliseconds
           undo.log.delete.period = 86400000
           undo.log.table = "undo_log"
         }
@@ -4131,7 +4131,7 @@ Nacos默认有自带嵌入式数据库,derby,但是如果做集群模式的话,�
           type = "nacos"
          
           nacos {
-            #serverAddr = "localhost"
+            [[serverAddr]] = "localhost"
             serverAddr = "localhost:8848"
             namespace = ""
             cluster = "default"

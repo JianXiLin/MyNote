@@ -4,16 +4,72 @@
     "type": "split",
     "children": [
       {
-        "id": "6d9677b77e7a5b93",
+        "id": "cbe5dfb051629617",
         "type": "leaf",
-        "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "中间件/数据库/MyCat/总述.md",
+            "file": "Leetcode/1. 数组、链表/链表-topic.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "f05772db00f01a7c"
+      },
+      {
+        "id": "85a8051ff4187978",
+        "type": "split",
+        "children": [
+          {
+            "id": "0c401a5f362d4f5b",
+            "type": "leaf",
+            "dimension": 63.66822429906542,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Leetcode/1. 数组、链表/链表-topic.md",
+                "mode": "preview"
+              }
+            },
+            "group": "f05772db00f01a7c"
+          },
+          {
+            "id": "3348e28b55e27624",
+            "type": "leaf",
+            "dimension": 36.331775700934585,
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Leetcode/1. 数组、链表/链表-topic.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6989606412938238,
+                  "close": false
+                }
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -39,6 +95,21 @@
             "type": "leaf",
             "state": {
               "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "30d8903f713088b0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
               "state": {}
             }
           }
@@ -46,7 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 229
   },
   "right": {
     "id": "f4c388bd0190f4a4",
@@ -62,7 +133,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "中间件/数据库/MyCat/总述.md"
+                "file": "Leetcode/1. 数组、链表/链表-topic.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -73,8 +151,17 @@
     "width": 300,
     "collapsed": true
   },
+  "active": "cbe5dfb051629617",
   "lastOpenFiles": [
-    "中间件/数据库/MyCat/总述.md",
-    "大学课程/软件测试/黑盒测试.md"
+    "Leetcode/1. 数组、链表/链表-topic.md",
+    "Leetcode/1. 数组、链表/数组-topic.md",
+    "Leetcode/1. 数组、链表/数组、列表template.md",
+    "Leetcode/1. 数组、链表/1. 数组、链表.md",
+    "Leetcode/Leetcode.md",
+    "JUC/FutureTask.md",
+    "JUC/FureTask.md",
+    "JUC/JUC.md",
+    "JUC/未命名.md",
+    "未命名.md"
   ]
 }

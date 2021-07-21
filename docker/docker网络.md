@@ -89,7 +89,7 @@ docker run -d --name tomcat_net_1 --net mynet tomcat
 docker run -d --name tomcat_net_2 --net mynet tomcat
 
 # tomcat_net_1 ping tomcat_net_2 (无需使用ip)
-docker exec tomcat_net_1 ping tomcat_net_2 #可ping通
+docker exec tomcat_net_1 ping tomcat_net_2 [[可ping]]通
 
 ```
 
@@ -115,6 +115,6 @@ docker exec tomcat_net_1 ping tomcat_net_2 #可ping通
 docker network connect mynet tomcat_1
 
 # 网卡docker0下的tomcat_1 ping 网卡mynet下的tomcat_net_1
-docker exec -it tomcat_1 ping tomcat_net_1      #可ping通
+docker exec -it tomcat_1 ping tomcat_net_1      [[可ping]]通
 
 ```

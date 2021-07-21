@@ -10,7 +10,7 @@
 
 1. 1.x 版本中的filterBy指令，在2.x中已经被废除：
 
-[filterBy - 指令](https://v1-cn.vuejs.org/api/#filterBy)
+[filterBy - 指令](https://v1-cn.vuejs.org/api/[[filterBy]])
 
 ```
 
@@ -456,7 +456,7 @@ jsonpInfo() { // JSONP形式从服务器获取数据
 ```
 // 创建 Vue 实例，得到 ViewModel
 var vm = new Vue({
-  el: '#app',
+  el: '[[app]]',
   data: {
     isshow: false
   },
@@ -566,7 +566,7 @@ methods: {
 ```
     // 创建 Vue 实例，得到 ViewModel
     var vm = new Vue({
-      el: '#app',
+      el: '[[app]]',
       data: {
         txt: '',
         list: [1, 2, 3, 4]

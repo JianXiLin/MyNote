@@ -6,7 +6,7 @@
 1. 和 App.vue 中的 `router-link` 身上的类名 `mui-tab-item` 存在兼容性问题，导致tab栏失效，可以把`mui-tab-item`改名为`mui-tab-item1`，并复制相关的类样式，来解决这个问题；
 ```
     .mui-bar-tab .mui-tab-item1.mui-active {
-      color: #007aff;
+      color: [[007aff]];
     }
 
     .mui-bar-tab .mui-tab-item1 {

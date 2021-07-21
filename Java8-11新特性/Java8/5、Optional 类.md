@@ -1,6 +1,6 @@
-# <font color=#4caf50 > 1 、Optional </font>
-
-## <font color=#4caf50 >1） 简介 </font>
+# <font color=[[4caf50]] > 1 、Optional </font>
+[[Java8]]
+## <font color=[[4caf50]] >1） 简介 </font>
 
 Optional 是一个 可保存一个T类型的值的容器类。
 
@@ -8,7 +8,7 @@ Optional 是一个 可保存一个T类型的值的容器类。
 
 Optional 是一个可以为null的对象。
 
-## <font color=#4caf50 >2） 类中的方法 </font>
+## <font color=[[4caf50]] >2） 类中的方法 </font>
 
 ![image.png](https://i.loli.net/2020/02/23/rOgCDjW6ZEbNX9M.png)
 

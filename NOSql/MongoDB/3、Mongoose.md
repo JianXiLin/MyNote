@@ -1,6 +1,6 @@
-# <font color=#689F38>一、Mongoose</font>
+# <font color=[[689F38]]>一、Mongoose</font>
 
-## <font color=#689F38> 1、简介</font>
+## <font color=[[689F38]]> 1、简介</font>
 
 Mongoose是一个对象文档模型（ODM）库
 
@@ -10,9 +10,9 @@ Mongoose对Node中的MongoDB进行封装及优化。
 
 
 
-## <font color=#689F38> 2、mongoose连接MongoDB </font>
+## <font color=[[689F38]]> 2、mongoose连接MongoDB </font>
 
-### <font color=#689F38> 1）、导入</font>
+### <font color=[[689F38]]> 1）、导入</font>
 
 先初始化项目，在项目中添加package.json。
 
@@ -27,7 +27,7 @@ npm i mongoose -save
 // 或者 npm install mongoose
 ```
 
-### <font color=#689F38> 2）、加载Mongoose 以及连接数据库
+### <font color=[[689F38]]> 2）、加载Mongoose 以及连接数据库
 
 使用node运行js文件
 
@@ -40,9 +40,9 @@ mongoose.connect("mongodb://127.0.0.1/my_test",{ useUnifiedTopology: true })
 
 
 
-## <font color=#689F38> 3、mongoose中的对象 </font>
+## <font color=[[689F38]]> 3、mongoose中的对象 </font>
 
-### <font color=#689F38>3.1 、Document</font>
+### <font color=[[689F38]]>3.1 、Document</font>
 
 connection对象是对数据库连接的抽象，它提供了对象连接
 
@@ -64,19 +64,19 @@ mongoose.connection.once("close",function(){
 mongoose.connection.close()
 ```
 
-### <font color=#689F38>3.2 、Schema</font>
+### <font color=[[689F38]]>3.2 、Schema</font>
 
 模式对象，用于约束MongoDB中的文档。
 
 可通过Mongoose的Schema属性获取Schema对象。
 
-#### <font color=#689F38>1)、约束的类型：</font>
+#### <font color=[[689F38]]>1)、约束的类型：</font>
 
 ```
 – String – Number – Boolean – Array – Buffer – Date – ObjectId或Oid – Mixed
 ```
 
-#### <font color=#689F38>2）、模式对象的创建</font>
+#### <font color=[[689F38]]>2）、模式对象的创建</font>
 
 ```
 new Schema(definition,option) 
@@ -117,7 +117,7 @@ new Schema({ name: String }, { _id: false, autoIndex: false })
 
 
 
-### <font color=#689F38>3.3 、Model</font>
+### <font color=[[689F38]]>3.3 、Model</font>
 
 Model对象就相当于数据库中的集合。
 
@@ -125,7 +125,7 @@ Model对象就相当于数据库中的集合。
 
 再通过Model对文档进行CRUD
 
-#### <font color=#689F38>1)、创建Model的语法：</font>
+#### <font color=[[689F38]]>1)、创建Model的语法：</font>
 
 ```js
 – model(name, [schema], [collection] , [skipInit]) 
@@ -142,9 +142,9 @@ eg:
 var StudentModel = mongoose.model("student",ASchema); //Mongoose会自动 "student" - > "students"
 ```
 
-#### <font color=#689F38>2)、Model中部分的方法：</font>
+#### <font color=[[689F38]]>2)、Model中部分的方法：</font>
 
-##### <font color=#689F38>A、添加、创建文档数据</font>
+##### <font color=[[689F38]]>A、添加、创建文档数据</font>
 
 > Model.create(doc(s), [callback])
 >
@@ -172,7 +172,7 @@ AModel.create(
 )
 ```
 
-##### <font color=#689F38>B、查找文档</font>
+##### <font color=[[689F38]]>B、查找文档</font>
 
 回调函数中的doc参数 即 model 的实例。可在使用doc 调用model的方法
 
@@ -231,7 +231,7 @@ StudentModel.findOne({name:"小红01"},function(err,docs){
 })
 ```
 
-##### <font color=#689F38>C、修改文档数据</font>
+##### <font color=[[689F38]]>C、修改文档数据</font>
 
 > - Model.update(conditions, doc, [options], [callback])
 >
@@ -298,7 +298,7 @@ StudentModel.replaceOne(
 
 
 
-##### <font color=#689F38>D、删除文档数据</font>
+##### <font color=[[689F38]]>D、删除文档数据</font>
 
 >  Model.remove(conditions, [callback])
 >  		Model.deleteOne(conditions, [callback])
@@ -315,7 +315,7 @@ StudentModel.remove({name:"小红2"},function(err,query){
 })
 ```
 
-##### <font color=#689F38>E、计数</font>
+##### <font color=[[689F38]]>E、计数</font>
 
 > Model.count(conditions, [callback])
 
@@ -327,9 +327,9 @@ StuModel.count({},function (err , count) {
 });
 ```
 
-### <font color=#689F38>3.4 、Document</font>
+### <font color=[[689F38]]>3.4 、Document</font>
 
-#### <font color=#689F38>1)、简介：</font>
+#### <font color=[[689F38]]>1)、简介：</font>
 
 Document继承自Model，代表一个集合中的文档。
 
@@ -346,7 +346,7 @@ var MingDoc = new StudentModel({
 
 ```
 
-#### <font color=#689F38>2)、Document  转JSON、普通的Object：</font>
+#### <font color=[[689F38]]>2)、Document  转JSON、普通的Object：</font>
 
 eg :
 
@@ -361,7 +361,7 @@ console.log(MingObject._id);
 console.log(MingObject.id);  //undefined-- Object 对象则不能调用Document中的属性
 ```
 
-#### <font color=#689F38>3)、Document中的方法</font>
+#### <font color=[[689F38]]>3)、Document中的方法</font>
 
 ```
 • equals(doc) 
@@ -401,7 +401,7 @@ StudentModel.find(
 
 
 
-#### <font color=#689F38>4)、注意</font>
+#### <font color=[[689F38]]>4)、注意</font>
 
 Model 的方法会先执行，之后再执行Document的方法
 

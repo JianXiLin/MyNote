@@ -8,10 +8,10 @@
 ```css
 //readmore button （第一个CSS选择器无效）
 .post-readmore__link{
-    background-color: #27ae60;
+    background-color: [[27ae60]];
 }
 .post-readmore__link:hover{
-    background-color: #1f7f47;
+    background-color: [[1f7f47]];
 }
 ```
 
@@ -19,7 +19,7 @@
 
 ```css
 .post-readmore__link{
-    background-color: #27ae60; //green （有效）
+    background-color: [[27ae60]]; //green （有效）
 }
 ```
 
@@ -28,7 +28,7 @@
 ```css
 /* readmore button */
 .post-readmore__link{
-    background-color: #27ae60; //green （有效）
+    background-color: [[27ae60]]; //green （有效）
 }
 ```
 
@@ -52,7 +52,7 @@
 
 ```css
 .post-readmore__link{
-    background-color: #27ae60 !important;
+    background-color: [[27ae60]] !important;
 }
 ```
 

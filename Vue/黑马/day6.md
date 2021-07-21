@@ -112,7 +112,7 @@ module: {
 
     var vm = new Vue({
 
-      el: '#app',
+      el: '[[app]]',
 
       render: c => c(App)
 
@@ -198,7 +198,7 @@ var router = new VueRouter({
 
 var vm = new Vue({
 
-  el: '#app',
+  el: '[[app]]',
 
   // render: c => { return c(App) }
 
@@ -352,7 +352,7 @@ import '../lib/mui/css/mui.min.css'
 
  	.router-link-active{
 
-      	color:#007aff !important;
+      	color:[[007aff]] !important;
 
     }
 
