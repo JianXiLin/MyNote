@@ -27,7 +27,7 @@
               "type": "markdown",
               "state": {
                 "file": "Leetcode/1. 数组、链表/链表-topic.md",
-                "mode": "preview"
+                "mode": "source"
               }
             },
             "group": "f05772db00f01a7c"
@@ -62,7 +62,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6989606412938238,
+                  "scale": 1.1018287861931828,
                   "close": false
                 }
               }
@@ -154,14 +154,14 @@
   "active": "cbe5dfb051629617",
   "lastOpenFiles": [
     "Leetcode/1. 数组、链表/链表-topic.md",
-    "Leetcode/1. 数组、链表/数组-topic.md",
+    "Leetcode/2. 栈、队列/2. 栈、队列.md",
     "Leetcode/1. 数组、链表/数组、列表template.md",
+    "Leetcode/1. 数组、链表/数组-topic.md",
     "Leetcode/1. 数组、链表/1. 数组、链表.md",
+    "临时文件/flowable/未命名.md",
+    "临时文件/未命名.md",
     "Leetcode/Leetcode.md",
-    "JUC/FutureTask.md",
-    "JUC/FureTask.md",
-    "JUC/JUC.md",
-    "JUC/未命名.md",
-    "未命名.md"
+    "Leetcode/10. 贪心/10. 贪心.md",
+    "Leetcode/10. 贪心/(860)- Lemonade Change.md"
   ]
 }

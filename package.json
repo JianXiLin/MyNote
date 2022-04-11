@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tinypudding/mysql-connector": "^1.1.11",
+    "mysql": "^2.18.1"
+  }
+}

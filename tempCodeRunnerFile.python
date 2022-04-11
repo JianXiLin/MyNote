@@ -1,0 +1,17 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  port="3300",
+  user="root",
+  password="123456"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("show databases")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
